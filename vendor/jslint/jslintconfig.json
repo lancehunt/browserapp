@@ -1,0 +1,15 @@
+{
+    "bitwise": true,
+    "eqeqeq": true,
+    "immed": true,
+    "newcap": true,
+    "nomen": true,
+    "onevar": true,
+    "plusplus": true,
+    "regexp": true,
+    "node": true,
+    "undef": true,
+    "white": true,
+    "vars": true,
+    "seealso" : "http://www.jslint.com/lint.html#options"
+}

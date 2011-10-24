@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <link href="vendor/showdown/markdown.css" rel="stylesheet"></link>
+    </head>
+    <body class="container-fluid">
+        <div class="error">Try again by running the tools/readme.cmd file.  If all else fails, just open the .md file in notepad.</div>
+        <div class="md"></div>
+        <script type="text/javascript" src="src/lib/require.js"></script>
+        <script type="text/javascript">
+            require.config({
+                paths: {
+                    'text' : 'src/lib/text',
+                    'order' : 'src/lib/order',
+                    'jquery' : 'src/lib/jquery-1.6.2-module',
+                    'showdown' : 'vendor/showdown/showdown-module'
+                }
+            });
+
+            require([
+                'require',
+                'order!jquery',
+                'showdown'
+            ], function(require, jq, showdown) {
+                var mdConverter = new showdown.converter();
+
+                $(".md").each(function() {
+                    var that = $(this);
+                    //look for an .md file named the same as the current page.
+                    var mdSource = window.location.pathname;
+                    mdSource = mdSource.substring(1, mdSource.lastIndexOf('.')) + '.md';
+
+                    if(mdSource) {
+                        require(['text!' + mdSource], function(md) {
+                            that.html(mdConverter.makeHtml(md));
+                        });
+                    }
+                    else {
+                        $('.error').hide();
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

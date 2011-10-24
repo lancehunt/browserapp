@@ -1,0 +1,1 @@
+start chrome.exe --new-window --allow-file-access-from-files %CD%/../README.html

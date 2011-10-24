@@ -1,0 +1,53 @@
+﻿// less framework
+@import "../../lib/bootstrap/bootstrap.less";
+
+/**
+     overriding default grids
+**/
+
+// Griditude
+@gridColumns:       32;
+@gridColumnWidth:   30px; /* 40 */
+@gridGutterWidth:   5px; /* 20 */
+@siteWidth:         (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+// Grid System
+.container {
+  width: @siteWidth;
+  margin: 0 auto;
+  .clearfixEx();
+}
+
+.columns(@columnSpan: 1) {
+  width: (@gridColumnWidth * @columnSpan) + (@gridGutterWidth * (@columnSpan - 1));
+}
+.offset(@columnOffset: 1) {
+  margin-left: (@gridColumnWidth * @columnOffset) + (@gridGutterWidth * (@columnOffset - 1)) + @extraSpace;
+}
+
+// Links
+@linkColor:         #8b59c2;
+@linkColorHover:    darken(@linkColor, 10);
+
+// Grays
+@black:             #000;
+@grayDark:          lighten(@black, 25%);
+@gray:              lighten(@black, 50%);
+@grayLight:         lighten(@black, 70%);
+@grayLighter:       lighten(@black, 90%);
+@white:             #fff;
+
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.lime {
+    background-color: lime;
+}
+
+.menuBar {
+    padding-top: 40px;
+}
