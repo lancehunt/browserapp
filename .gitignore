@@ -18,3 +18,4 @@ packages
 *.docstates
 *.idea
 _ReSharper.*/
+src/**/less/*.css
