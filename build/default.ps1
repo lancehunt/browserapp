@@ -28,7 +28,7 @@ task Run -depends DisplayVersion, Build -Description 'Starts a browser with the 
         exec {  .\run-server.ps1 }
     popd
     
-	exec { start ../tools/node "../build/server.js $build_staged_dir $webserver_port" }
+	exec { start ../vendor/nodejs/node "../build/server.js $build_staged_dir $webserver_port" }
 	
 	$url = "http://" + $host_name + ":" + $webserver_port + "/index.html"
 	Write-Host "Application is running at "
@@ -40,7 +40,7 @@ task Debug -depends DisplayVersion, GetVendorFiles, Less2Css, InitLocalSettings 
         exec { .\run-server.ps1 }
     popd
     
-	exec { start ../tools/node "../build/server.js $project_dir $webserver_port" }
+	exec { start ../vendor/nodejs/node "../build/server.js $project_dir $webserver_port" }
 
 	$url = "http://" + $host_name + ":" + $webserver_port + "/index.html"
 	Write-Host  "Application is running at "
@@ -64,7 +64,7 @@ task Package -depends BuildAndTest -Description 'Consolidates releasable artifac
 #zips up a package and names it accordingly.
 task Archive -depends Package -desc 'Generates zip packages to the $release_dir with timestamped name formatting.'{
     pushd $base_dir
-       exec { .\tools/7zip/7za.exe a $build_dir/Iwt_build.zip $build_output_dir/* }
+       exec { .\vendor/7zip/7za.exe a $build_dir/Iwt_build.zip $build_output_dir/* }
     popd
 	
 	if(!(test-path $release_dir)){
@@ -99,14 +99,14 @@ task TestPerf -depends DisplayVersion, GetVendorFiles, Build -Description 'Runs 
 }
 
 task Test -depends DisplayVersion, GetVendorFiles -Description 'Runs the tests in the test/spec folder' {
-	exec { ../tools/node51.exe ../tools/jessie/jessie.js ../tools/jessie/spec/ -f nested }
+	exec { ../vendor/nodejs/node51.exe ../vendor/jessie/jessie.js ../vendor/jessie/spec/ -f nested }
 }
 
 task TestStaged -depends DisplayVersion -Description 'Runs the tests in the build/staged folder' {
     Write-Host 'Executing Jessie Tests in ' + $build_staged_dir
     Get-ChildItem $build_staged_dir -include spec -recurse |
         foreach($_) {
-            exec { ../tools/node ../tools/jessie/jessie.js $_.FullName + '/' -f nested }}
+            exec { ../vendor/nodejs/node ../vendor/jessie/jessie.js $_.FullName + '/' -f nested }}
 }
 
 task BuildAndTest -depends Build, Test{
@@ -115,12 +115,12 @@ task BuildAndTest -depends Build, Test{
 task GetVendorFiles -Description 'Downloads all the dependencies for building and testing' {
 	Import-Module ./Get-WebFile.ps1
 	# Create directory if does not exist
-	if ((Test-Path ..\tools\ -pathType container) -ne $True)
+	if ((Test-Path ..\vendor\ -pathType container) -ne $True)
 	{
-		New-Item ..\tools\ -type directory
-		cd ..\tools
-		Get-WebFile http://requirejs.org/docs/release/0.27.0/r.js ..\tools\
-		Get-WebFile http://nodejs.org/dist/v0.5.8/node.exe ..\tools\
+		New-Item ..\vendor\ -type directory
+		cd ..\vendor
+		Get-WebFile http://requirejs.org/docs/release/0.27.0/r.js ..\vendor\r.js\
+		Get-WebFile http://nodejs.org/dist/v0.5.8/node.exe ..\vendor\nodejs\
 		cd ..\build
 	}
 }
@@ -134,7 +134,7 @@ task JsLint -Description 'Run JSLint over all .js files except for the /lib/ fol
 		Get-ChildItem $project_dir -include *.js -recurse |
 		    where {($_ -notmatch 'lib') -and (!$_.PSIsContainer)} |
 		        foreach($_) {
-		            .\tools/node51.exe .\tools/jslint/jslintnode.js $_.FullName .\tools/jslint/jslintconfig.json
+		            .\vendor/nodejs/node51.exe .\vendor/jslint/jslintnode.js $_.FullName .\vendor/jslint/jslintconfig.json
 		            $jsLintError = $jsLintError -or ($LastExitCode -ne 0)
 		            }
     popd
@@ -153,7 +153,7 @@ task JsLint -Description 'Run JSLint over all .js files except for the /lib/ fol
 task OptimizeJs -Description 'Optimize all files within the /src folder' {
     pushd $base_dir
 		Write-Host 'Optimize:  Combining and Uglifying scripts'
-		exec {  .\tools/node51 --debug .\tools/r.js -o .\build/app.build.js }
+		exec {  .\vendor/nodejs/node51 --debug .\vendor/r.js/r.js -o .\build/app.build.js }
     popd
 }
 
@@ -161,7 +161,7 @@ task Less2Css -Description 'Convert all .less files to .css if they are located 
     Get-ChildItem $project_dir -include "*.less" -recurse |
 		Where-Object {$_.FullName -like "*\less\*" } |
 			foreach($_) {
-			    exec { ../tools/node ../tools/less/lessc.js $_.FullName $_.FullName.Replace(".less", ".css")}}
+			    exec { ../vendor/nodejs/node ../vendor/less/lessc.js $_.FullName $_.FullName.Replace(".less", ".css")}}
 }
 
 task WatchLess -Description 'Add a File-System Watcher to all .less files and call Less2Css when changes occur' {
@@ -186,7 +186,7 @@ task RunSpecs -depends Build -Description 'Run all jasmine specs within the /src
 		Write-Host 'Jessie: Testing all specs in ' + $build_staged_dir
 		Get-ChildItem $build_staged_dir -include spec -recurse |
 		    foreach($_) {
-		        exec { ./tools/node ./tools/jessie/jessie.js $_.FullName + '/' -f nested } }
+		        exec { ./vendor/nodejs/node ./vendor/jessie/jessie.js $_.FullName + '/' -f nested } }
 
 	popd
 }
@@ -234,7 +234,7 @@ task help -depends ? -Description 'alias to the ? task' { }
 
 task ErrorTest {
     pushd $base_dir
-        exec { .\tools/node -e "process.exit(1);" }
+        exec { .\vendors/nodejs/node -e "process.exit(1);" }
         Assert ($LastExitCode -eq 1) "LastExitCode should be 1, but is $LastExitCode"
         echo ( "This line should not be run")
     popd
