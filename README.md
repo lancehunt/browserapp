@@ -1,4 +1,17 @@
 # BrowserApp #
+This is a boilerplate project for starting a new browser-based application using a variety of tools including:
+
+  * RequireJs / r.js
+  * KnockoutJs
+  * Socket.io
+  * Jasmine
+  * NodeJs
+  * LessJs
+  * JSLint
+  * etc.
+  
+This repo uses Powershell and PSake as the build tool.
+
 
 ## Running the Project ##
 To immediately run the project use the run command from the root of the site:
