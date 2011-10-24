@@ -54,7 +54,7 @@ To generate a compressed *Archive* file for the package, you use the following *
 ## Publishing the Code ##
 To publish the release package, you use the following *Psake* powershell command:
 
-    > .\psake stage [targetpath]
+    > .\psake push [targetpath]
 
 This does a build and package then copies the results to the target path.  The *targetpath* parameter
  is used to pass the fully qualified path where you want the package copied.

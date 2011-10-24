@@ -83,7 +83,7 @@ task Archive -depends Package -desc 'Generates zip packages to the $release_dir 
 }
 
 #copies a package to the specified staging folder
-task Publish -depends Package{
+task Push -depends Package{
 	reset-folder $publish_path
 	Copy-Item "$build_output_dir/*" $publish_path -recurse -Force
 }
