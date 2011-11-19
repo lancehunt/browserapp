@@ -14,7 +14,7 @@ function (css, Session, Profile, gui, pubsub) {
         session: new Session(),
         profile: new Profile(),
         gui: gui,
-        log: logger.trace, 
+        log: window.trace, 
         
 		// TODO: add services here
         services: {

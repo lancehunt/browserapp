@@ -1,1 +1,1 @@
-start ../tools/node.exe server/webapistream.js
+start ../vendor/node.exe server/webapistream.js

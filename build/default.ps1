@@ -27,11 +27,7 @@ task DisplayVersion `
 
 task Run -depends DisplayVersion, Build `
     -Description 'Starts a browser with the built version of the app' {
-
-    pushd $base_dir/build
-        exec {  .\run-server.ps1 }
-    popd
-    
+   
 	exec { start ../vendor/nodejs/node "../build/server.js $build_staged_dir $webserver_port" }
 	
 	$url = "http://" + $host_name + ":" + $webserver_port + "/index.html"
@@ -41,10 +37,6 @@ task Run -depends DisplayVersion, Build `
 
 task Debug -depends DisplayVersion, GetVendorFiles, Less2Css, InitLocalSettings `
     -Description 'Starts a browser with the unbuilt version of the app' {
-
-    pushd $base_dir/build
-        exec { .\run-server.ps1 }
-    popd
     
 	exec { start ../vendor/nodejs/node "../build/server.js $project_dir $webserver_port" }
 
