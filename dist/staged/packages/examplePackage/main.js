@@ -1,0 +1,1 @@
+define(["require","core","i18n!./nls/resource"],function(a,b,c){return b.loadCss(a.toUrl("./less/package.css")),{}})

@@ -1,0 +1,1 @@
+define(function(){var a=function(){};return a.prototype={trace:window.trace,error:window.trace,warn:window.trace},a})

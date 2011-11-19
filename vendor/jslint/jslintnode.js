@@ -258,8 +258,8 @@
 // For example:
 
 /*jslint
-    evil: true, nomen: false, onevar: false, regexp: false, strict: true
-*/
+ evil: true, nomen: false, onevar: false, regexp: false, strict: true
+ */
 
 // The properties directive declares an exclusive list of property names.
 // Any properties named in the program that are not in the list will
@@ -268,155 +268,155 @@
 // For example:
 
 /*properties "\b", "\t", "\n", "\f", "\r", "!=", "!==", "\"", "%", "'",
-    "(begin)", "(breakage)", "(context)", "(error)", "(global)",
-    "(identifier)", "(line)", "(loopage)", "(name)", "(onevar)", "(params)",
-    "(scope)", "(statement)", "(token)", "(verb)", ")", "*", "+", "-", "\/",
-    ";", "<", "<=", "==", "===", ">", ">=", ADSAFE, ActiveXObject,
-    Array, Boolean, Buffer, COM, CScript, Canvas, CustomAnimation, Date,
-    Debug, E, Enumerator, Error, EvalError, FadeAnimation, Flash, FormField,
-    Frame, Function, HotKey, Image, JSON, LN10, LN2, LOG10E, LOG2E,
-    MAX_VALUE, MIN_VALUE, Math, MenuItem, MoveAnimation, NEGATIVE_INFINITY,
-    Number, Object, Option, PI, POSITIVE_INFINITY, Point, RangeError,
-    Rectangle, ReferenceError, RegExp, ResizeAnimation, RotateAnimation,
-    SQRT1_2, SQRT2, ScrollBar, String, Style, SyntaxError, System, Text,
-    TextArea, Timer, TypeError, URIError, URL, VBArray, WScript, Web,
-    Window, XMLDOM, XMLHttpRequest, "\\", __dirname, __filename, a,
-    a_function, a_label, a_not_allowed, a_not_defined, a_scope, abbr,
-    acronym, activeborder, activecaption, address, adsafe, adsafe_a,
-    adsafe_autocomplete, adsafe_bad_id, adsafe_div, adsafe_fragment,
-    adsafe_go, adsafe_html, adsafe_id, adsafe_id_go, adsafe_lib,
-    adsafe_lib_second, adsafe_missing_id, adsafe_name_a, adsafe_placement,
-    adsafe_prefix_a, adsafe_script, adsafe_source, adsafe_subscript_a,
-    adsafe_tag, alert, aliceblue, all, already_defined, and, animator,
-    antiquewhite, appleScript, applet, apply, approved, appworkspace, aqua,
-    aquamarine, area, arguments, arity, article, aside, assign,
-    assign_exception, assignment_function_expression, at, attribute_case_a,
-    audio, autocomplete, avoid_a, azure, b, background,
-    "background-attachment", "background-color", "background-image",
-    "background-position", "background-repeat", bad_assignment, bad_color_a,
-    bad_constructor, bad_entity, bad_html, bad_id_a, bad_in_a,
-    bad_invocation, bad_name_a, bad_new, bad_number, bad_operand, bad_type,
-    bad_url, bad_wrap, base, bdo, beep, beige, big, bisque, bitwise, black,
-    blanchedalmond, block, blockquote, blue, blueviolet, body, border,
-    "border-bottom", "border-bottom-color", "border-bottom-style",
-    "border-bottom-width", "border-collapse", "border-color", "border-left",
-    "border-left-color", "border-left-style", "border-left-width",
-    "border-right", "border-right-color", "border-right-style",
-    "border-right-width", "border-spacing", "border-style", "border-top",
-    "border-top-color", "border-top-style", "border-top-width",
-    "border-width", bottom, br, braille, brown, browser, burlywood, button,
-    buttonface, buttonhighlight, buttonshadow, buttontext, bytesToUIString,
-    c, cadetblue, call, callee, caller, canvas, cap, caption,
-    "caption-side", captiontext, center, charAt, charCodeAt, character,
-    chartreuse, chocolate, chooseColor, chooseFile, chooseFolder, cite,
-    clear, clearInterval, clearTimeout, clearTimout, clip, closeWidget,
-    closure, cm, code, col, colgroup, color, combine_var, command, comment,
-    comments, concat, conditional_assignment, confirm, confusing_a,
-    confusing_regexp, console, constructor, constructor_name_a, content,
-    continue, control_a, convertPathToHFS, convertPathToPlatform, coral,
-    cornflowerblue, cornsilk, "counter-increment", "counter-reset", create,
-    crimson, css, cursor, cyan, d, dangerous_comment, dangling_a, darkblue,
-    darkcyan, darkgoldenrod, darkgray, darkgreen, darkkhaki, darkmagenta,
-    darkolivegreen, darkorange, darkorchid, darkred, darksalmon,
-    darkseagreen, darkslateblue, darkslategray, darkturquoise, darkviolet,
-    data, datalist, dd, debug, decodeURI, decodeURIComponent, deeppink,
-    deepskyblue, defineClass, del, deleted, deserialize, details, devel,
-    dfn, dialog, dimgray, dir, direction, display, disrupt, div, dl,
-    document, dodgerblue, dt, duplicate_a, edge, edition, else, em, embed,
-    embossed, empty, "empty-cells", empty_block, empty_case, empty_class,
-    encodeURI, encodeURIComponent, entityify, errors, es5, escape, eval,
-    event, evidence, evil, ex, exception, exec, expected_a,
-    expected_a_at_b_c, expected_a_b, expected_a_b_from_c_d, expected_at_a,
-    expected_attribute_a, expected_attribute_value_a, expected_class_a,
-    expected_fraction_a, expected_id_a, expected_identifier_a,
-    expected_identifier_a_reserved, expected_lang_a, expected_linear_a,
-    expected_media_a, expected_name_a, expected_nonstandard_style_attribute,
-    expected_number_a, expected_operator_a, expected_percent_a,
-    expected_positive_a, expected_pseudo_a, expected_selector_a,
-    expected_small_a, expected_space_a_b, expected_string_a,
-    expected_style_attribute, expected_style_pattern, expected_tagname_a,
-    fieldset, figure, filesystem, filter, firebrick, first, float, floor,
-    floralwhite, focusWidget, font, "font-family", "font-size",
-    "font-size-adjust", "font-stretch", "font-style", "font-variant",
-    "font-weight", footer, for_if, forestgreen, forin, form, fragment,
-    frame, frames, frameset, from, fromCharCode, fuchsia, fud, funct,
-    function, function_block, function_eval, function_loop,
-    function_statement, function_strict, functions, g, gainsboro, gc,
-    get_set, ghostwhite, global, globals, gold, goldenrod, gray, graytext,
-    green, greenyellow, h1, h2, h3, h4, h5, h6, handheld, hasOwnProperty,
-    head, header, height, help, hgroup, highlight, highlighttext, history,
-    honeydew, hotpink, hr, "hta:application", html, html_confusion_a,
-    html_handlers, i, iTunes, id, identifier, identifier_function, iframe,
-    img, immed, implied_evil, implieds, in, inactiveborder, inactivecaption,
-    inactivecaptiontext, include, indent, indexOf, indianred, indigo,
-    infix_in, infobackground, infotext, init, input, ins, insecure_a,
-    isAlpha, isApplicationRunning, isArray, isDigit, isFinite, isNaN, ivory,
-    join, jslint, json, kbd, keygen, keys, khaki, konfabulatorVersion,
-    label, label_a_b, labeled, lang, lavender, lavenderblush, lawngreen,
-    lbp, leading_decimal_a, led, left, legend, lemonchiffon, length,
-    "letter-spacing", li, lib, lightblue, lightcoral, lightcyan,
-    lightgoldenrodyellow, lightgreen, lightpink, lightsalmon, lightseagreen,
-    lightskyblue, lightslategray, lightsteelblue, lightyellow, lime,
-    limegreen, line, "line-height", linen, link, "list-style",
-    "list-style-image", "list-style-position", "list-style-type", load,
-    loadClass, location, log, m, magenta, map, margin, "margin-bottom",
-    "margin-left", "margin-right", "margin-top", mark, "marker-offset",
-    maroon, match, "max-height", "max-width", maxerr, maxlen, md5,
-    mediumaquamarine, mediumblue, mediumorchid, mediumpurple,
-    mediumseagreen, mediumslateblue, mediumspringgreen, mediumturquoise,
-    mediumvioletred, member, menu, menutext, message, meta, meter,
-    midnightblue, "min-height", "min-width", mintcream, missing_a,
-    missing_a_after_b, missing_option, missing_property, missing_space_a_b,
-    missing_url, missing_use_strict, mistyrose, mixed, mm, moccasin, mode,
-    module, move_invocation, move_var, name, name_function, nav,
-    navajowhite, navigator, navy, nested_comment, newcap, next, node,
-    noframes, nomen, noscript, not, not_a_constructor, not_a_defined,
-    not_a_function, not_a_label, not_a_scope, not_greater, nud, object, ol,
-    oldlace, olive, olivedrab, on, onevar, opacity, open, openURL, opera,
-    optgroup, option, orange, orangered, orchid, outer, outline,
-    "outline-color", "outline-style", "outline-width", output, overflow,
-    "overflow-x", "overflow-y", p, padding, "padding-bottom",
-    "padding-left", "padding-right", "padding-top", "page-break-after",
-    "page-break-before", palegoldenrod, palegreen, paleturquoise,
-    palevioletred, papayawhip, param, parameter_a_get_b, parameter_set_a,
-    paren, parent, parseFloat, parseInt, passfail, pc, peachpuff, peru,
-    pink, play, plum, plusplus, pop, popupMenu, position, postscript,
-    powderblue, pre, predef, preferenceGroups, preferences, prev, print,
-    process, progress, projection, prompt, prototype, pt, purple, push, px,
-    q, querystring, quit, quote, quotes, radix, random, range, raw,
-    readFile, readUrl, read_only, reason, red, redefinition_a, regexp,
-    reloadWidget, replace, report, require, reserved, reserved_a,
-    resolvePath, resumeUpdates, rhino, right, rosybrown, royalblue, rp, rt,
-    ruby, runCommand, runCommandInBg, saddlebrown, safe, salmon, samp,
-    sandybrown, saveAs, savePreferences, scanned_a_b, screen, script,
-    scrollbar, seagreen, seal, search, seashell, second, section, select,
-    serialize, setInterval, setTimeout, shift, showWidgetPreferences,
-    sienna, silver, skyblue, slash_equal, slateblue, slategray, sleep,
-    slice, small, snow, sort, source, span, spawn, speak, speech, split,
-    springgreen, src, stack, statement_block, steelblue, stopping,
-    strange_loop, strict, strong, style, styleproperty, sub, subscript,
-    substr, sup, supplant, suppressUpdates, sync, system, table,
-    "table-layout", tag_a_in_b, tan, tbody, td, teal, tellWidget, test,
-    "text-align", "text-decoration", "text-indent", "text-shadow",
-    "text-transform", textarea, tfoot, th, thead, third, thistle,
-    threeddarkshadow, threedface, threedhighlight, threedlightshadow,
-    threedshadow, thru, time, title, toLowerCase, toString, toUpperCase,
-    toint32, token, tomato, too_long, too_many, top, tr, trailing_decimal_a,
-    tree, tt, tty, turquoise, tv, type, u, ul, unclosed, unclosed_comment,
-    unclosed_regexp, undef, unescape, unescaped_a, unexpected_a,
-    unexpected_char_a_b, unexpected_comment, unexpected_member_a,
-    unexpected_space_a_b, "unicode-bidi", unnecessary_initialize,
-    unnecessary_use, unreachable_a_b, unrecognized_style_attribute_a,
-    unrecognized_tag_a, unsafe, unused, unwatch, updateNow, url, urls,
-    use_array, use_braces, use_object, used_before_a, util, value, valueOf,
-    var, var_a_not, version, "vertical-align", video, violet, visibility,
-    was, watch, weird_assignment, weird_condition, weird_new, weird_program,
-    weird_relation, weird_ternary, wheat, white, "white-space", whitesmoke,
-    widget, width, window, windowframe, windows, windowtext, "word-spacing",
-    "word-wrap", wrap, wrap_immediate, wrap_regexp, write_is_wrong,
-    yahooCheckLogin, yahooLogin, yahooLogout, yellow, yellowgreen,
-    "z-index"
-*/
+ "(begin)", "(breakage)", "(context)", "(error)", "(global)",
+ "(identifier)", "(line)", "(loopage)", "(name)", "(onevar)", "(params)",
+ "(scope)", "(statement)", "(token)", "(verb)", ")", "*", "+", "-", "\/",
+ ";", "<", "<=", "==", "===", ">", ">=", ADSAFE, ActiveXObject,
+ Array, Boolean, Buffer, COM, CScript, Canvas, CustomAnimation, Date,
+ Debug, E, Enumerator, Error, EvalError, FadeAnimation, Flash, FormField,
+ Frame, Function, HotKey, Image, JSON, LN10, LN2, LOG10E, LOG2E,
+ MAX_VALUE, MIN_VALUE, Math, MenuItem, MoveAnimation, NEGATIVE_INFINITY,
+ Number, Object, Option, PI, POSITIVE_INFINITY, Point, RangeError,
+ Rectangle, ReferenceError, RegExp, ResizeAnimation, RotateAnimation,
+ SQRT1_2, SQRT2, ScrollBar, String, Style, SyntaxError, System, Text,
+ TextArea, Timer, TypeError, URIError, URL, VBArray, WScript, Web,
+ Window, XMLDOM, XMLHttpRequest, "\\", __dirname, __filename, a,
+ a_function, a_label, a_not_allowed, a_not_defined, a_scope, abbr,
+ acronym, activeborder, activecaption, address, adsafe, adsafe_a,
+ adsafe_autocomplete, adsafe_bad_id, adsafe_div, adsafe_fragment,
+ adsafe_go, adsafe_html, adsafe_id, adsafe_id_go, adsafe_lib,
+ adsafe_lib_second, adsafe_missing_id, adsafe_name_a, adsafe_placement,
+ adsafe_prefix_a, adsafe_script, adsafe_source, adsafe_subscript_a,
+ adsafe_tag, alert, aliceblue, all, already_defined, and, animator,
+ antiquewhite, appleScript, applet, apply, approved, appworkspace, aqua,
+ aquamarine, area, arguments, arity, article, aside, assign,
+ assign_exception, assignment_function_expression, at, attribute_case_a,
+ audio, autocomplete, avoid_a, azure, b, background,
+ "background-attachment", "background-color", "background-image",
+ "background-position", "background-repeat", bad_assignment, bad_color_a,
+ bad_constructor, bad_entity, bad_html, bad_id_a, bad_in_a,
+ bad_invocation, bad_name_a, bad_new, bad_number, bad_operand, bad_type,
+ bad_url, bad_wrap, base, bdo, beep, beige, big, bisque, bitwise, black,
+ blanchedalmond, block, blockquote, blue, blueviolet, body, border,
+ "border-bottom", "border-bottom-color", "border-bottom-style",
+ "border-bottom-width", "border-collapse", "border-color", "border-left",
+ "border-left-color", "border-left-style", "border-left-width",
+ "border-right", "border-right-color", "border-right-style",
+ "border-right-width", "border-spacing", "border-style", "border-top",
+ "border-top-color", "border-top-style", "border-top-width",
+ "border-width", bottom, br, braille, brown, browser, burlywood, button,
+ buttonface, buttonhighlight, buttonshadow, buttontext, bytesToUIString,
+ c, cadetblue, call, callee, caller, canvas, cap, caption,
+ "caption-side", captiontext, center, charAt, charCodeAt, character,
+ chartreuse, chocolate, chooseColor, chooseFile, chooseFolder, cite,
+ clear, clearInterval, clearTimeout, clearTimout, clip, closeWidget,
+ closure, cm, code, col, colgroup, color, combine_var, command, comment,
+ comments, concat, conditional_assignment, confirm, confusing_a,
+ confusing_regexp, console, constructor, constructor_name_a, content,
+ continue, control_a, convertPathToHFS, convertPathToPlatform, coral,
+ cornflowerblue, cornsilk, "counter-increment", "counter-reset", create,
+ crimson, css, cursor, cyan, d, dangerous_comment, dangling_a, darkblue,
+ darkcyan, darkgoldenrod, darkgray, darkgreen, darkkhaki, darkmagenta,
+ darkolivegreen, darkorange, darkorchid, darkred, darksalmon,
+ darkseagreen, darkslateblue, darkslategray, darkturquoise, darkviolet,
+ data, datalist, dd, debug, decodeURI, decodeURIComponent, deeppink,
+ deepskyblue, defineClass, del, deleted, deserialize, details, devel,
+ dfn, dialog, dimgray, dir, direction, display, disrupt, div, dl,
+ document, dodgerblue, dt, duplicate_a, edge, edition, else, em, embed,
+ embossed, empty, "empty-cells", empty_block, empty_case, empty_class,
+ encodeURI, encodeURIComponent, entityify, errors, es5, escape, eval,
+ event, evidence, evil, ex, exception, exec, expected_a,
+ expected_a_at_b_c, expected_a_b, expected_a_b_from_c_d, expected_at_a,
+ expected_attribute_a, expected_attribute_value_a, expected_class_a,
+ expected_fraction_a, expected_id_a, expected_identifier_a,
+ expected_identifier_a_reserved, expected_lang_a, expected_linear_a,
+ expected_media_a, expected_name_a, expected_nonstandard_style_attribute,
+ expected_number_a, expected_operator_a, expected_percent_a,
+ expected_positive_a, expected_pseudo_a, expected_selector_a,
+ expected_small_a, expected_space_a_b, expected_string_a,
+ expected_style_attribute, expected_style_pattern, expected_tagname_a,
+ fieldset, figure, filesystem, filter, firebrick, first, float, floor,
+ floralwhite, focusWidget, font, "font-family", "font-size",
+ "font-size-adjust", "font-stretch", "font-style", "font-variant",
+ "font-weight", footer, for_if, forestgreen, forin, form, fragment,
+ frame, frames, frameset, from, fromCharCode, fuchsia, fud, funct,
+ function, function_block, function_eval, function_loop,
+ function_statement, function_strict, functions, g, gainsboro, gc,
+ get_set, ghostwhite, global, globals, gold, goldenrod, gray, graytext,
+ green, greenyellow, h1, h2, h3, h4, h5, h6, handheld, hasOwnProperty,
+ head, header, height, help, hgroup, highlight, highlighttext, history,
+ honeydew, hotpink, hr, "hta:application", html, html_confusion_a,
+ html_handlers, i, iTunes, id, identifier, identifier_function, iframe,
+ img, immed, implied_evil, implieds, in, inactiveborder, inactivecaption,
+ inactivecaptiontext, include, indent, indexOf, indianred, indigo,
+ infix_in, infobackground, infotext, init, input, ins, insecure_a,
+ isAlpha, isApplicationRunning, isArray, isDigit, isFinite, isNaN, ivory,
+ join, jslint, json, kbd, keygen, keys, khaki, konfabulatorVersion,
+ label, label_a_b, labeled, lang, lavender, lavenderblush, lawngreen,
+ lbp, leading_decimal_a, led, left, legend, lemonchiffon, length,
+ "letter-spacing", li, lib, lightblue, lightcoral, lightcyan,
+ lightgoldenrodyellow, lightgreen, lightpink, lightsalmon, lightseagreen,
+ lightskyblue, lightslategray, lightsteelblue, lightyellow, lime,
+ limegreen, line, "line-height", linen, link, "list-style",
+ "list-style-image", "list-style-position", "list-style-type", load,
+ loadClass, location, log, m, magenta, map, margin, "margin-bottom",
+ "margin-left", "margin-right", "margin-top", mark, "marker-offset",
+ maroon, match, "max-height", "max-width", maxerr, maxlen, md5,
+ mediumaquamarine, mediumblue, mediumorchid, mediumpurple,
+ mediumseagreen, mediumslateblue, mediumspringgreen, mediumturquoise,
+ mediumvioletred, member, menu, menutext, message, meta, meter,
+ midnightblue, "min-height", "min-width", mintcream, missing_a,
+ missing_a_after_b, missing_option, missing_property, missing_space_a_b,
+ missing_url, missing_use_strict, mistyrose, mixed, mm, moccasin, mode,
+ module, move_invocation, move_var, name, name_function, nav,
+ navajowhite, navigator, navy, nested_comment, newcap, next, node,
+ noframes, nomen, noscript, not, not_a_constructor, not_a_defined,
+ not_a_function, not_a_label, not_a_scope, not_greater, nud, object, ol,
+ oldlace, olive, olivedrab, on, onevar, opacity, open, openURL, opera,
+ optgroup, option, orange, orangered, orchid, outer, outline,
+ "outline-color", "outline-style", "outline-width", output, overflow,
+ "overflow-x", "overflow-y", p, padding, "padding-bottom",
+ "padding-left", "padding-right", "padding-top", "page-break-after",
+ "page-break-before", palegoldenrod, palegreen, paleturquoise,
+ palevioletred, papayawhip, param, parameter_a_get_b, parameter_set_a,
+ paren, parent, parseFloat, parseInt, passfail, pc, peachpuff, peru,
+ pink, play, plum, plusplus, pop, popupMenu, position, postscript,
+ powderblue, pre, predef, preferenceGroups, preferences, prev, print,
+ process, progress, projection, prompt, prototype, pt, purple, push, px,
+ q, querystring, quit, quote, quotes, radix, random, range, raw,
+ readFile, readUrl, read_only, reason, red, redefinition_a, regexp,
+ reloadWidget, replace, report, require, reserved, reserved_a,
+ resolvePath, resumeUpdates, rhino, right, rosybrown, royalblue, rp, rt,
+ ruby, runCommand, runCommandInBg, saddlebrown, safe, salmon, samp,
+ sandybrown, saveAs, savePreferences, scanned_a_b, screen, script,
+ scrollbar, seagreen, seal, search, seashell, second, section, select,
+ serialize, setInterval, setTimeout, shift, showWidgetPreferences,
+ sienna, silver, skyblue, slash_equal, slateblue, slategray, sleep,
+ slice, small, snow, sort, source, span, spawn, speak, speech, split,
+ springgreen, src, stack, statement_block, steelblue, stopping,
+ strange_loop, strict, strong, style, styleproperty, sub, subscript,
+ substr, sup, supplant, suppressUpdates, sync, system, table,
+ "table-layout", tag_a_in_b, tan, tbody, td, teal, tellWidget, test,
+ "text-align", "text-decoration", "text-indent", "text-shadow",
+ "text-transform", textarea, tfoot, th, thead, third, thistle,
+ threeddarkshadow, threedface, threedhighlight, threedlightshadow,
+ threedshadow, thru, time, title, toLowerCase, toString, toUpperCase,
+ toint32, token, tomato, too_long, too_many, top, tr, trailing_decimal_a,
+ tree, tt, tty, turquoise, tv, type, u, ul, unclosed, unclosed_comment,
+ unclosed_regexp, undef, unescape, unescaped_a, unexpected_a,
+ unexpected_char_a_b, unexpected_comment, unexpected_member_a,
+ unexpected_space_a_b, "unicode-bidi", unnecessary_initialize,
+ unnecessary_use, unreachable_a_b, unrecognized_style_attribute_a,
+ unrecognized_tag_a, unsafe, unused, unwatch, updateNow, url, urls,
+ use_array, use_braces, use_object, used_before_a, util, value, valueOf,
+ var, var_a_not, version, "vertical-align", video, violet, visibility,
+ was, watch, weird_assignment, weird_condition, weird_new, weird_program,
+ weird_relation, weird_ternary, wheat, white, "white-space", whitesmoke,
+ widget, width, window, windowframe, windows, windowtext, "word-spacing",
+ "word-wrap", wrap, wrap_immediate, wrap_regexp, write_is_wrong,
+ yahooCheckLogin, yahooLogin, yahooLogout, yellow, yellowgreen,
+ "z-index"
+ */
 
 // The global directive is used to declare global variables that can
 // be accessed by the program. If a declaration is true, then the variable
@@ -954,7 +954,7 @@ var JSLINT = (function () {
             hgroup:   {},
             hr:       {empty: true},
             'hta:application':
-                      {empty: true, parent: ' head '},
+            {empty: true, parent: ' head '},
             html:     {parent: '*'},
             i:        {},
             iframe:   {},
@@ -1284,7 +1284,8 @@ var JSLINT = (function () {
         return this;
     }
 
-    function F() {}     // Used by Object.create
+    function F() {
+    }     // Used by Object.create
 
 // Provide critical ES5 functions to ES3.
 
@@ -1511,7 +1512,7 @@ var JSLINT = (function () {
                 line: line
             };
             if (comments_off || src || (xmode && xmode !== 'script' &&
-                    xmode !== 'style' && xmode !== 'styleproperty')) {
+                xmode !== 'style' && xmode !== 'styleproperty')) {
                 warn_at('unexpected_comment', line, character);
             } else if (xmode === 'script' && /<\//i.test(source_row)) {
                 warn_at('unexpected_a', line, character, '<\/');
@@ -1561,16 +1562,16 @@ var JSLINT = (function () {
             the_token = Object.create(syntax[(
                 type === '(punctuator)' ||
                     (type === '(identifier)' &&
-                    Object.prototype.hasOwnProperty.call(syntax, value)) ?
-                value :
-                type
-            )] || syntax['(error)']);
+                        Object.prototype.hasOwnProperty.call(syntax, value)) ?
+                    value :
+                    type
+                )] || syntax['(error)']);
             if (type === '(identifier)') {
                 the_token.identifier = true;
                 if (value === '__iterator__' || value === '__proto__') {
                     fail_at('reserved_a', line, from, value);
                 } else if (option.nomen &&
-                        (value.charAt(0) === '_' ||
+                    (value.charAt(0) === '_' ||
                         value.charAt(value.length - 1) === '_')) {
                     warn_at('dangling_a', line, from, value);
                 }
@@ -1588,8 +1589,8 @@ var JSLINT = (function () {
             id = the_token.id;
             prereg = id && (
                 ('(,=:[!&|?{};'.indexOf(id.charAt(id.length - 1)) >= 0) ||
-                id === 'return'
-            );
+                    id === 'return'
+                );
             older_token.next = the_token;
             older_token = the_token;
             return the_token;
@@ -1619,22 +1620,22 @@ var JSLINT = (function () {
                     fail_at('expected_a_b', line, character, begin,
                         source_row.charAt(0));
                 }
-                for (;;) {
+                for (; ;) {
                     source_row = source_row.slice(1);
                     character += 1;
                     c = source_row.charAt(0);
                     switch (c) {
-                    case '':
-                        fail_at('missing_a', line, character, c);
-                        break;
-                    case end:
-                        source_row = source_row.slice(1);
-                        character += 1;
-                        return it('(range)', value);
-                    case xquote:
-                    case '\\':
-                        warn_at('unexpected_a', line, character, c);
-                        break;
+                        case '':
+                            fail_at('missing_a', line, character, c);
+                            break;
+                        case end:
+                            source_row = source_row.slice(1);
+                            character += 1;
+                            return it('(range)', value);
+                        case xquote:
+                        case '\\':
+                            warn_at('unexpected_a', line, character, c);
+                            break;
                     }
                     value += c;
                 }
@@ -1665,7 +1666,7 @@ var JSLINT = (function () {
                         var i = parseInt(source_row.substr(j + 1, n), 16);
                         j += n;
                         if (i >= 32 && i <= 126 &&
-                                i !== 34 && i !== 92 && i !== 39) {
+                            i !== 34 && i !== 92 && i !== 39) {
                             warn_at('unexpected_a', line, character, '\\');
                         }
                         character += n;
@@ -1681,7 +1682,7 @@ var JSLINT = (function () {
                     }
 
                     j = 0;
-                    for (;;) {
+                    for (; ;) {
                         while (j >= source_row.length) {
                             j = 0;
                             if (xmode !== 'html' || !next_line()) {
@@ -1728,50 +1729,50 @@ var JSLINT = (function () {
                                 character += 1;
                                 c = source_row.charAt(j);
                                 switch (c) {
-                                case xquote:
-                                    warn_at('bad_html', line, character + j);
-                                    break;
-                                case '\\':
-                                case '"':
-                                case '/':
-                                    break;
-                                case '\'':
-                                    if (json_mode) {
-                                        warn_at('unexpected_a', line, character, '\\\'');
-                                    }
-                                    break;
-                                case 'b':
-                                    c = '\b';
-                                    break;
-                                case 'f':
-                                    c = '\f';
-                                    break;
-                                case 'n':
-                                    c = '\n';
-                                    break;
-                                case 'r':
-                                    c = '\r';
-                                    break;
-                                case 't':
-                                    c = '\t';
-                                    break;
-                                case 'u':
-                                    hex(4);
-                                    break;
-                                case 'v':
-                                    if (json_mode) {
-                                        warn_at('unexpected_a', line, character, '\\v');
-                                    }
-                                    c = '\v';
-                                    break;
-                                case 'x':
-                                    if (json_mode) {
-                                        warn_at('unexpected_a', line, character, '\\x');
-                                    }
-                                    hex(2);
-                                    break;
-                                default:
-                                    warn_at('unexpected_a', line, character, '\\');
+                                    case xquote:
+                                        warn_at('bad_html', line, character + j);
+                                        break;
+                                    case '\\':
+                                    case '"':
+                                    case '/':
+                                        break;
+                                    case '\'':
+                                        if (json_mode) {
+                                            warn_at('unexpected_a', line, character, '\\\'');
+                                        }
+                                        break;
+                                    case 'b':
+                                        c = '\b';
+                                        break;
+                                    case 'f':
+                                        c = '\f';
+                                        break;
+                                    case 'n':
+                                        c = '\n';
+                                        break;
+                                    case 'r':
+                                        c = '\r';
+                                        break;
+                                    case 't':
+                                        c = '\t';
+                                        break;
+                                    case 'u':
+                                        hex(4);
+                                        break;
+                                    case 'v':
+                                        if (json_mode) {
+                                            warn_at('unexpected_a', line, character, '\\v');
+                                        }
+                                        c = '\v';
+                                        break;
+                                    case 'x':
+                                        if (json_mode) {
+                                            warn_at('unexpected_a', line, character, '\\x');
+                                        }
+                                        hex(2);
+                                        break;
+                                    default:
+                                        warn_at('unexpected_a', line, character, '\\');
                                 }
                             }
                         }
@@ -1781,7 +1782,7 @@ var JSLINT = (function () {
                     }
                 }
 
-                for (;;) {
+                for (; ;) {
                     while (!source_row) {
                         if (!next_line()) {
                             return it('(end)');
@@ -1828,8 +1829,8 @@ var JSLINT = (function () {
 
                         if (c.isDigit()) {
                             if (xmode !== 'style' &&
-                                    xmode !== 'styleproperty' &&
-                                    source_row.substr(0, 1).isAlpha()) {
+                                xmode !== 'styleproperty' &&
+                                source_row.substr(0, 1).isAlpha()) {
                                 warn_at('expected_space_a_b',
                                     line, character, c, source_row.charAt(0));
                             }
@@ -1861,199 +1862,91 @@ var JSLINT = (function () {
 
 //      string
 
-                        case '"':
-                        case "'":
-                            return string(symbol);
+                            case '"':
+                            case "'":
+                                return string(symbol);
 
 //      // comment
 
-                        case '//':
-                            collect_comment(source_row, '//', line, character);
-                            source_row = '';
-                            break;
+                            case '//':
+                                collect_comment(source_row, '//', line, character);
+                                source_row = '';
+                                break;
 
 //      /* comment
 
-                        case '/*':
-                            quote = '/*';
-                            for (;;) {
-                                i = source_row.search(lx);
-                                if (i >= 0) {
-                                    break;
+                            case '/*':
+                                quote = '/*';
+                                for (; ;) {
+                                    i = source_row.search(lx);
+                                    if (i >= 0) {
+                                        break;
+                                    }
+                                    collect_comment(source_row, quote, line, character);
+                                    quote = '';
+                                    if (!next_line()) {
+                                        fail_at('unclosed_comment', line, character);
+                                    }
                                 }
-                                collect_comment(source_row, quote, line, character);
-                                quote = '';
-                                if (!next_line()) {
-                                    fail_at('unclosed_comment', line, character);
+                                collect_comment(source_row.slice(0, i), quote, character, line);
+                                character += i + 2;
+                                if (source_row.substr(i, 1) === '/') {
+                                    fail_at('nested_comment', line, character);
                                 }
-                            }
-                            collect_comment(source_row.slice(0, i), quote, character, line);
-                            character += i + 2;
-                            if (source_row.substr(i, 1) === '/') {
-                                fail_at('nested_comment', line, character);
-                            }
-                            source_row = source_row.substr(i + 2);
-                            break;
+                                source_row = source_row.substr(i + 2);
+                                break;
 
-                        case '':
-                            break;
+                            case '':
+                                break;
 //      /
-                        case '/':
-                            if (token.id === '/=') {
-                                fail_at(
-                                    bundle.slash_equal,
-                                    line,
-                                    from
-                                );
-                            }
-                            if (prereg) {
-                                depth = 0;
-                                captures = 0;
-                                length = 0;
-                                for (;;) {
-                                    b = true;
-                                    c = source_row.charAt(length);
-                                    length += 1;
-                                    switch (c) {
-                                    case '':
-                                        fail_at('unclosed_regexp', line, from);
-                                        return;
-                                    case '/':
-                                        if (depth > 0) {
-                                            warn_at('unescaped_a',
-                                                line, from + length, '/');
-                                        }
-                                        c = source_row.substr(0, length - 1);
-                                        flag = Object.create(regexp_flag);
-                                        while (flag[source_row.charAt(length)] === true) {
-                                            flag[source_row.charAt(length)] = false;
-                                            length += 1;
-                                        }
-                                        if (source_row.charAt(length).isAlpha()) {
-                                            fail_at('unexpected_a',
-                                                line, from, source_row.charAt(length));
-                                        }
-                                        character += length;
-                                        source_row = source_row.substr(length);
-                                        quote = source_row.charAt(0);
-                                        if (quote === '/' || quote === '*') {
-                                            fail_at('confusing_regexp',
-                                                line, from);
-                                        }
-                                        return it('(regexp)', c);
-                                    case '\\':
+                            case '/':
+                                if (token.id === '/=') {
+                                    fail_at(
+                                        bundle.slash_equal,
+                                        line,
+                                        from
+                                    );
+                                }
+                                if (prereg) {
+                                    depth = 0;
+                                    captures = 0;
+                                    length = 0;
+                                    for (; ;) {
+                                        b = true;
                                         c = source_row.charAt(length);
-                                        if (c < ' ') {
-                                            warn_at('control_a',
-                                                line, from + length, String(c));
-                                        } else if (c === '<') {
-                                            warn_at(
-                                                bundle.unexpected_a,
-                                                line,
-                                                from + length,
-                                                '\\'
-                                            );
-                                        }
                                         length += 1;
-                                        break;
-                                    case '(':
-                                        depth += 1;
-                                        b = false;
-                                        if (source_row.charAt(length) === '?') {
-                                            length += 1;
-                                            switch (source_row.charAt(length)) {
-                                            case ':':
-                                            case '=':
-                                            case '!':
-                                                length += 1;
-                                                break;
-                                            default:
-                                                warn_at(
-                                                    bundle.expected_a_b,
-                                                    line,
-                                                    from + length,
-                                                    ':',
-                                                    source_row.charAt(length)
-                                                );
-                                            }
-                                        } else {
-                                            captures += 1;
-                                        }
-                                        break;
-                                    case '|':
-                                        b = false;
-                                        break;
-                                    case ')':
-                                        if (depth === 0) {
-                                            warn_at('unescaped_a',
-                                                line, from + length, ')');
-                                        } else {
-                                            depth -= 1;
-                                        }
-                                        break;
-                                    case ' ':
-                                        j = 1;
-                                        while (source_row.charAt(length) === ' ') {
-                                            length += 1;
-                                            j += 1;
-                                        }
-                                        if (j > 1) {
-                                            warn_at('use_braces',
-                                                line, from + length, j);
-                                        }
-                                        break;
-                                    case '[':
-                                        c = source_row.charAt(length);
-                                        if (c === '^') {
-                                            length += 1;
-                                            if (option.regexp) {
-                                                warn_at('insecure_a',
-                                                    line, from + length, c);
-                                            } else if (source_row.charAt(length) === ']') {
-                                                fail_at('unescaped_a',
-                                                    line, from + length, '^');
-                                            }
-                                        }
-                                        quote = false;
-                                        if (c === ']') {
-                                            warn_at('empty_class', line,
-                                                from + length - 1);
-                                            quote = true;
-                                        }
-klass:                                  do {
-                                            c = source_row.charAt(length);
-                                            length += 1;
-                                            switch (c) {
-                                            case '[':
-                                            case '^':
-                                                warn_at('unescaped_a',
-                                                    line, from + length, c);
-                                                quote = true;
-                                                break;
-                                            case '-':
-                                                if (quote) {
-                                                    quote = false;
-                                                } else {
+                                        switch (c) {
+                                            case '':
+                                                fail_at('unclosed_regexp', line, from);
+                                                return;
+                                            case '/':
+                                                if (depth > 0) {
                                                     warn_at('unescaped_a',
-                                                        line, from + length, '-');
-                                                    quote = true;
+                                                        line, from + length, '/');
                                                 }
-                                                break;
-                                            case ']':
-                                                if (!quote) {
-                                                    warn_at('unescaped_a',
-                                                        line, from + length - 1, '-');
+                                                c = source_row.substr(0, length - 1);
+                                                flag = Object.create(regexp_flag);
+                                                while (flag[source_row.charAt(length)] === true) {
+                                                    flag[source_row.charAt(length)] = false;
+                                                    length += 1;
                                                 }
-                                                break klass;
+                                                if (source_row.charAt(length).isAlpha()) {
+                                                    fail_at('unexpected_a',
+                                                        line, from, source_row.charAt(length));
+                                                }
+                                                character += length;
+                                                source_row = source_row.substr(length);
+                                                quote = source_row.charAt(0);
+                                                if (quote === '/' || quote === '*') {
+                                                    fail_at('confusing_regexp',
+                                                        line, from);
+                                                }
+                                                return it('(regexp)', c);
                                             case '\\':
                                                 c = source_row.charAt(length);
                                                 if (c < ' ') {
-                                                    warn_at(
-                                                        bundle.control_a,
-                                                        line,
-                                                        from + length,
-                                                        String(c)
-                                                    );
+                                                    warn_at('control_a',
+                                                        line, from + length, String(c));
                                                 } else if (c === '<') {
                                                     warn_at(
                                                         bundle.unexpected_a,
@@ -2063,12 +1956,154 @@ klass:                                  do {
                                                     );
                                                 }
                                                 length += 1;
-                                                quote = true;
                                                 break;
-                                            case '/':
-                                                warn_at('unescaped_a',
-                                                    line, from + length - 1, '/');
-                                                quote = true;
+                                            case '(':
+                                                depth += 1;
+                                                b = false;
+                                                if (source_row.charAt(length) === '?') {
+                                                    length += 1;
+                                                    switch (source_row.charAt(length)) {
+                                                        case ':':
+                                                        case '=':
+                                                        case '!':
+                                                            length += 1;
+                                                            break;
+                                                        default:
+                                                            warn_at(
+                                                                bundle.expected_a_b,
+                                                                line,
+                                                                from + length,
+                                                                ':',
+                                                                source_row.charAt(length)
+                                                            );
+                                                    }
+                                                } else {
+                                                    captures += 1;
+                                                }
+                                                break;
+                                            case '|':
+                                                b = false;
+                                                break;
+                                            case ')':
+                                                if (depth === 0) {
+                                                    warn_at('unescaped_a',
+                                                        line, from + length, ')');
+                                                } else {
+                                                    depth -= 1;
+                                                }
+                                                break;
+                                            case ' ':
+                                                j = 1;
+                                                while (source_row.charAt(length) === ' ') {
+                                                    length += 1;
+                                                    j += 1;
+                                                }
+                                                if (j > 1) {
+                                                    warn_at('use_braces',
+                                                        line, from + length, j);
+                                                }
+                                                break;
+                                            case '[':
+                                                c = source_row.charAt(length);
+                                                if (c === '^') {
+                                                    length += 1;
+                                                    if (option.regexp) {
+                                                        warn_at('insecure_a',
+                                                            line, from + length, c);
+                                                    } else if (source_row.charAt(length) === ']') {
+                                                        fail_at('unescaped_a',
+                                                            line, from + length, '^');
+                                                    }
+                                                }
+                                                quote = false;
+                                                if (c === ']') {
+                                                    warn_at('empty_class', line,
+                                                        from + length - 1);
+                                                    quote = true;
+                                                }
+                                                klass:                                  do {
+                                                    c = source_row.charAt(length);
+                                                    length += 1;
+                                                    switch (c) {
+                                                        case '[':
+                                                        case '^':
+                                                            warn_at('unescaped_a',
+                                                                line, from + length, c);
+                                                            quote = true;
+                                                            break;
+                                                        case '-':
+                                                            if (quote) {
+                                                                quote = false;
+                                                            } else {
+                                                                warn_at('unescaped_a',
+                                                                    line, from + length, '-');
+                                                                quote = true;
+                                                            }
+                                                            break;
+                                                        case ']':
+                                                            if (!quote) {
+                                                                warn_at('unescaped_a',
+                                                                    line, from + length - 1, '-');
+                                                            }
+                                                            break klass;
+                                                        case '\\':
+                                                            c = source_row.charAt(length);
+                                                            if (c < ' ') {
+                                                                warn_at(
+                                                                    bundle.control_a,
+                                                                    line,
+                                                                    from + length,
+                                                                    String(c)
+                                                                );
+                                                            } else if (c === '<') {
+                                                                warn_at(
+                                                                    bundle.unexpected_a,
+                                                                    line,
+                                                                    from + length,
+                                                                    '\\'
+                                                                );
+                                                            }
+                                                            length += 1;
+                                                            quote = true;
+                                                            break;
+                                                        case '/':
+                                                            warn_at('unescaped_a',
+                                                                line, from + length - 1, '/');
+                                                            quote = true;
+                                                            break;
+                                                        case '<':
+                                                            if (xmode === 'script') {
+                                                                c = source_row.charAt(length);
+                                                                if (c === '!' || c === '/') {
+                                                                    warn_at(
+                                                                        bundle.html_confusion_a,
+                                                                        line,
+                                                                        from + length,
+                                                                        c
+                                                                    );
+                                                                }
+                                                            }
+                                                            quote = true;
+                                                            break;
+                                                        default:
+                                                            quote = true;
+                                                    }
+                                                } while (c);
+                                                break;
+                                            case '.':
+                                                if (option.regexp) {
+                                                    warn_at('insecure_a', line,
+                                                        from + length, c);
+                                                }
+                                                break;
+                                            case ']':
+                                            case '?':
+                                            case '{':
+                                            case '}':
+                                            case '+':
+                                            case '*':
+                                                warn_at('unescaped_a', line,
+                                                    from + length, c);
                                                 break;
                                             case '<':
                                                 if (xmode === 'script') {
@@ -2082,198 +2117,164 @@ klass:                                  do {
                                                         );
                                                     }
                                                 }
-                                                quote = true;
                                                 break;
-                                            default:
-                                                quote = true;
-                                            }
-                                        } while (c);
-                                        break;
-                                    case '.':
-                                        if (option.regexp) {
-                                            warn_at('insecure_a', line,
-                                                from + length, c);
                                         }
-                                        break;
-                                    case ']':
-                                    case '?':
-                                    case '{':
-                                    case '}':
-                                    case '+':
-                                    case '*':
-                                        warn_at('unescaped_a', line,
-                                            from + length, c);
-                                        break;
-                                    case '<':
-                                        if (xmode === 'script') {
-                                            c = source_row.charAt(length);
-                                            if (c === '!' || c === '/') {
-                                                warn_at(
-                                                    bundle.html_confusion_a,
-                                                    line,
-                                                    from + length,
-                                                    c
-                                                );
-                                            }
-                                        }
-                                        break;
-                                    }
-                                    if (b) {
-                                        switch (source_row.charAt(length)) {
-                                        case '?':
-                                        case '+':
-                                        case '*':
-                                            length += 1;
-                                            if (source_row.charAt(length) === '?') {
-                                                length += 1;
-                                            }
-                                            break;
-                                        case '{':
-                                            length += 1;
-                                            c = source_row.charAt(length);
-                                            if (c < '0' || c > '9') {
-                                                warn_at(
-                                                    bundle.expected_number_a,
-                                                    line,
-                                                    from + length,
-                                                    c
-                                                );
-                                            }
-                                            length += 1;
-                                            low = +c;
-                                            for (;;) {
-                                                c = source_row.charAt(length);
-                                                if (c < '0' || c > '9') {
-                                                    break;
-                                                }
-                                                length += 1;
-                                                low = +c + (low * 10);
-                                            }
-                                            high = low;
-                                            if (c === ',') {
-                                                length += 1;
-                                                high = Infinity;
-                                                c = source_row.charAt(length);
-                                                if (c >= '0' && c <= '9') {
+                                        if (b) {
+                                            switch (source_row.charAt(length)) {
+                                                case '?':
+                                                case '+':
+                                                case '*':
                                                     length += 1;
-                                                    high = +c;
-                                                    for (;;) {
+                                                    if (source_row.charAt(length) === '?') {
+                                                        length += 1;
+                                                    }
+                                                    break;
+                                                case '{':
+                                                    length += 1;
+                                                    c = source_row.charAt(length);
+                                                    if (c < '0' || c > '9') {
+                                                        warn_at(
+                                                            bundle.expected_number_a,
+                                                            line,
+                                                            from + length,
+                                                            c
+                                                        );
+                                                    }
+                                                    length += 1;
+                                                    low = +c;
+                                                    for (; ;) {
                                                         c = source_row.charAt(length);
                                                         if (c < '0' || c > '9') {
                                                             break;
                                                         }
                                                         length += 1;
-                                                        high = +c + (high * 10);
+                                                        low = +c + (low * 10);
                                                     }
-                                                }
+                                                    high = low;
+                                                    if (c === ',') {
+                                                        length += 1;
+                                                        high = Infinity;
+                                                        c = source_row.charAt(length);
+                                                        if (c >= '0' && c <= '9') {
+                                                            length += 1;
+                                                            high = +c;
+                                                            for (; ;) {
+                                                                c = source_row.charAt(length);
+                                                                if (c < '0' || c > '9') {
+                                                                    break;
+                                                                }
+                                                                length += 1;
+                                                                high = +c + (high * 10);
+                                                            }
+                                                        }
+                                                    }
+                                                    if (source_row.charAt(length) !== '}') {
+                                                        warn_at(
+                                                            bundle.expected_a_b,
+                                                            line,
+                                                            from + length,
+                                                            '}',
+                                                            c
+                                                        );
+                                                    } else {
+                                                        length += 1;
+                                                    }
+                                                    if (source_row.charAt(length) === '?') {
+                                                        length += 1;
+                                                    }
+                                                    if (low > high) {
+                                                        warn_at(
+                                                            bundle.not_greater,
+                                                            line,
+                                                            from + length,
+                                                            low,
+                                                            high
+                                                        );
+                                                    }
+                                                    break;
                                             }
-                                            if (source_row.charAt(length) !== '}') {
-                                                warn_at(
-                                                    bundle.expected_a_b,
-                                                    line,
-                                                    from + length,
-                                                    '}',
-                                                    c
-                                                );
-                                            } else {
-                                                length += 1;
-                                            }
-                                            if (source_row.charAt(length) === '?') {
-                                                length += 1;
-                                            }
-                                            if (low > high) {
-                                                warn_at(
-                                                    bundle.not_greater,
-                                                    line,
-                                                    from + length,
-                                                    low,
-                                                    high
-                                                );
-                                            }
-                                            break;
                                         }
                                     }
+                                    c = source_row.substr(0, length - 1);
+                                    character += length;
+                                    source_row = source_row.substr(length);
+                                    return it('(regexp)', c);
                                 }
-                                c = source_row.substr(0, length - 1);
-                                character += length;
-                                source_row = source_row.substr(length);
-                                return it('(regexp)', c);
-                            }
-                            return it('(punctuator)', symbol);
+                                return it('(punctuator)', symbol);
 
 //      punctuator
 
-                        case '<!--':
-                            length = line;
-                            c = character;
-                            for (;;) {
-                                i = source_row.indexOf('--');
-                                if (i >= 0) {
-                                    break;
+                            case '<!--':
+                                length = line;
+                                c = character;
+                                for (; ;) {
+                                    i = source_row.indexOf('--');
+                                    if (i >= 0) {
+                                        break;
+                                    }
+                                    i = source_row.indexOf('<!');
+                                    if (i >= 0) {
+                                        fail_at('nested_comment',
+                                            line, character + i);
+                                    }
+                                    if (!next_line()) {
+                                        fail_at('unclosed_comment', length, c);
+                                    }
                                 }
-                                i = source_row.indexOf('<!');
-                                if (i >= 0) {
+                                length = source_row.indexOf('<!');
+                                if (length >= 0 && length < i) {
                                     fail_at('nested_comment',
-                                        line, character + i);
+                                        line, character + length);
                                 }
-                                if (!next_line()) {
-                                    fail_at('unclosed_comment', length, c);
+                                character += i;
+                                if (source_row.charAt(i + 2) !== '>') {
+                                    fail_at('expected_a', line, character, '-->');
                                 }
-                            }
-                            length = source_row.indexOf('<!');
-                            if (length >= 0 && length < i) {
-                                fail_at('nested_comment',
-                                    line, character + length);
-                            }
-                            character += i;
-                            if (source_row.charAt(i + 2) !== '>') {
-                                fail_at('expected_a', line, character, '-->');
-                            }
-                            character += 3;
-                            source_row = source_row.slice(i + 3);
-                            break;
-                        case '#':
-                            if (xmode === 'html' || xmode === 'styleproperty') {
-                                for (;;) {
-                                    c = source_row.charAt(0);
-                                    if ((c < '0' || c > '9') &&
+                                character += 3;
+                                source_row = source_row.slice(i + 3);
+                                break;
+                            case '#':
+                                if (xmode === 'html' || xmode === 'styleproperty') {
+                                    for (; ;) {
+                                        c = source_row.charAt(0);
+                                        if ((c < '0' || c > '9') &&
                                             (c < 'a' || c > 'f') &&
                                             (c < 'A' || c > 'F')) {
-                                        break;
+                                            break;
+                                        }
+                                        character += 1;
+                                        source_row = source_row.substr(1);
+                                        symbol += c;
                                     }
-                                    character += 1;
-                                    source_row = source_row.substr(1);
-                                    symbol += c;
+                                    if (symbol.length !== 4 && symbol.length !== 7) {
+                                        warn_at('bad_color_a', line,
+                                            from + length, symbol);
+                                    }
+                                    return it('(color)', symbol);
                                 }
-                                if (symbol.length !== 4 && symbol.length !== 7) {
-                                    warn_at('bad_color_a', line,
-                                        from + length, symbol);
-                                }
-                                return it('(color)', symbol);
-                            }
-                            return it('(punctuator)', symbol);
+                                return it('(punctuator)', symbol);
 
-                        default:
-                            if (xmode === 'outer' && c === '&') {
-                                character += 1;
-                                source_row = source_row.substr(1);
-                                for (;;) {
-                                    c = source_row.charAt(0);
+                            default:
+                                if (xmode === 'outer' && c === '&') {
                                     character += 1;
                                     source_row = source_row.substr(1);
-                                    if (c === ';') {
-                                        break;
-                                    }
-                                    if (!((c >= '0' && c <= '9') ||
+                                    for (; ;) {
+                                        c = source_row.charAt(0);
+                                        character += 1;
+                                        source_row = source_row.substr(1);
+                                        if (c === ';') {
+                                            break;
+                                        }
+                                        if (!((c >= '0' && c <= '9') ||
                                             (c >= 'a' && c <= 'z') ||
                                             c === '#')) {
-                                        fail_at('bad_entity', line, from + length,
-                                            character);
+                                            fail_at('bad_entity', line, from + length,
+                                                character);
+                                        }
                                     }
+                                    break;
                                 }
-                                break;
-                            }
-                            return it('(punctuator)', symbol);
+                                return it('(punctuator)', symbol);
                         }
                     }
                 }
@@ -2285,7 +2286,7 @@ klass:                                  do {
     function add_label(symbol, type) {
 
         if (option.safe && funct['(global)'] &&
-                typeof predefined[symbol] !== 'boolean') {
+            typeof predefined[symbol] !== 'boolean') {
             warn('adsafe_a', token, symbol);
         } else if (symbol === 'hasOwnProperty') {
             warn('bad_name_a', token, symbol);
@@ -2368,10 +2369,10 @@ klass:                                  do {
 
             if (var_mode && next_token.line !== token.line) {
                 if ((var_mode !== indent || !next_token.edge) &&
-                        next_token.from === indent.at -
+                    next_token.from === indent.at -
                         (next_token.edge ? option.indent : 0)) {
                     var dent = indent;
-                    for (;;) {
+                    for (; ;) {
                         dent.at -= option.indent;
                         if (dent === var_mode) {
                             break;
@@ -2398,7 +2399,7 @@ klass:                                  do {
 // If the token is not an edge, but is the first token on the line.
 
                 } else if (next_token.line !== token.line &&
-                        next_token.from < indent.at + (indent.mode ===
+                    next_token.from < indent.at + (indent.mode ===
                         'expression' ? 0 : option.indent)) {
                     expected_at(indent.at + option.indent);
                 }
@@ -2410,7 +2411,7 @@ klass:                                  do {
                     if (indent.mode === 'statement' || indent.mode === 'var') {
                         expected_at(indent.at + option.indent);
                     } else if (next_token.from < indent.at + (indent.mode ===
-                            'expression' ? 0 : option.indent)) {
+                        'expression' ? 0 : option.indent)) {
                         expected_at(indent.at + option.indent);
                     }
                 }
@@ -2418,21 +2419,21 @@ klass:                                  do {
         }
 
         switch (token.id) {
-        case '(number)':
-            if (next_token.id === '.') {
-                warn('trailing_decimal_a');
-            }
-            break;
-        case '-':
-            if (next_token.id === '-' || next_token.id === '--') {
-                warn('confusing_a');
-            }
-            break;
-        case '+':
-            if (next_token.id === '+' || next_token.id === '++') {
-                warn('confusing_a');
-            }
-            break;
+            case '(number)':
+                if (next_token.id === '.') {
+                    warn('trailing_decimal_a');
+                }
+                break;
+            case '-':
+                if (next_token.id === '-' || next_token.id === '--') {
+                    warn('confusing_a');
+                }
+                break;
+            case '+':
+                if (next_token.id === '+' || next_token.id === '++') {
+                    warn('confusing_a');
+                }
+                break;
         }
         if (token.arity === 'string' || token.identifier) {
             anonname = token.value;
@@ -2467,28 +2468,28 @@ klass:                                  do {
             warn('unexpected_a', this);
         }
         switch (command) {
-        case '/*properties':
-        case '/*members':
-            command = '/*properties';
-            if (!properties) {
-                properties = {};
-            }
-            break;
-        case '/*jslint':
-            if (option.safe) {
-                warn('adsafe_a', this);
-            }
-            break;
-        case '/*global':
-            if (option.safe) {
-                warn('adsafe_a', this);
-            }
-            break;
-        default:
-            fail('unpexpected_a', this);
+            case '/*properties':
+            case '/*members':
+                command = '/*properties';
+                if (!properties) {
+                    properties = {};
+                }
+                break;
+            case '/*jslint':
+                if (option.safe) {
+                    warn('adsafe_a', this);
+                }
+                break;
+            case '/*global':
+                if (option.safe) {
+                    warn('adsafe_a', this);
+                }
+                break;
+            default:
+                fail('unpexpected_a', this);
         }
-loop:   for (;;) {
-            for (;;) {
+        loop:   for (; ;) {
+            for (; ;) {
                 if (next_token.id === '*/') {
                     break loop;
                 }
@@ -2503,96 +2504,96 @@ loop:   for (;;) {
             name = next_token.value;
             advance();
             switch (command) {
-            case '/*global':
-                if (next_token.id === ':') {
-                    advance(':');
-                    switch (next_token.id) {
-                    case 'true':
-                        if (typeof scope[name] === 'object' ||
-                                global[name] === false) {
-                            fail('unexpected_a');
+                case '/*global':
+                    if (next_token.id === ':') {
+                        advance(':');
+                        switch (next_token.id) {
+                            case 'true':
+                                if (typeof scope[name] === 'object' ||
+                                    global[name] === false) {
+                                    fail('unexpected_a');
+                                }
+                                global[name] = true;
+                                advance('true');
+                                break;
+                            case 'false':
+                                if (typeof scope[name] === 'object') {
+                                    fail('unexpected_a');
+                                }
+                                global[name] = false;
+                                advance('false');
+                                break;
+                            default:
+                                fail('unexpected_a');
                         }
-                        global[name] = true;
-                        advance('true');
-                        break;
-                    case 'false':
+                    } else {
                         if (typeof scope[name] === 'object') {
                             fail('unexpected_a');
                         }
                         global[name] = false;
-                        advance('false');
-                        break;
-                    default:
-                        fail('unexpected_a');
                     }
-                } else {
-                    if (typeof scope[name] === 'object') {
-                        fail('unexpected_a');
-                    }
-                    global[name] = false;
-                }
-                break;
-            case '/*jslint':
-                if (next_token.id !== ':') {
-                    fail('expected_a_b', next_token, ':', next_token.value);
-                }
-                advance(':');
-                switch (name) {
-                case 'indent':
-                    value = +next_token.value;
-                    if (typeof value !== 'number' ||
-                            !isFinite(value) || value < 0 ||
-                            Math.floor(value) !== value) {
-                        fail('expected_small_a');
-                    }
-                    if (value > 0) {
-                        old_option_white = true;
-                    }
-                    option.indent = value;
                     break;
-                case 'maxerr':
-                    value = +next_token.value;
-                    if (typeof value !== 'number' ||
-                            !isFinite(value) ||
-                            value <= 0 ||
-                            Math.floor(value) !== value) {
-                        fail('expected_small_a', next_token);
+                case '/*jslint':
+                    if (next_token.id !== ':') {
+                        fail('expected_a_b', next_token, ':', next_token.value);
                     }
-                    option.maxerr = value;
+                    advance(':');
+                    switch (name) {
+                        case 'indent':
+                            value = +next_token.value;
+                            if (typeof value !== 'number' ||
+                                !isFinite(value) || value < 0 ||
+                                Math.floor(value) !== value) {
+                                fail('expected_small_a');
+                            }
+                            if (value > 0) {
+                                old_option_white = true;
+                            }
+                            option.indent = value;
+                            break;
+                        case 'maxerr':
+                            value = +next_token.value;
+                            if (typeof value !== 'number' ||
+                                !isFinite(value) ||
+                                value <= 0 ||
+                                Math.floor(value) !== value) {
+                                fail('expected_small_a', next_token);
+                            }
+                            option.maxerr = value;
+                            break;
+                        case 'maxlen':
+                            value = +next_token.value;
+                            if (typeof value !== 'number' || !isFinite(value) || value < 0 ||
+                                Math.floor(value) !== value) {
+                                fail('expected_small_a');
+                            }
+                            option.maxlen = value;
+                            break;
+                        case 'white':
+                            if (next_token.id === 'true') {
+                                old_option_white = true;
+                            } else if (next_token.id === 'false') {
+                                old_option_white = false;
+                            } else {
+                                fail('unexpected_a');
+                            }
+                            break;
+                        default:
+                            if (next_token.id === 'true') {
+                                option[name] = true;
+                            } else if (next_token.id === 'false') {
+                                option[name] = false;
+                            } else {
+                                fail('unexpected_a');
+                            }
+                    }
+                    advance();
                     break;
-                case 'maxlen':
-                    value = +next_token.value;
-                    if (typeof value !== 'number' || !isFinite(value) || value < 0 ||
-                            Math.floor(value) !== value) {
-                        fail('expected_small_a');
-                    }
-                    option.maxlen = value;
-                    break;
-                case 'white':
-                    if (next_token.id === 'true') {
-                        old_option_white = true;
-                    } else if (next_token.id === 'false') {
-                        old_option_white = false;
-                    } else {
-                        fail('unexpected_a');
-                    }
+                case '/*properties':
+                    properties[name] = true;
                     break;
                 default:
-                    if (next_token.id === 'true') {
-                        option[name] = true;
-                    } else if (next_token.id === 'false') {
-                        option[name] = false;
-                    } else {
-                        fail('unexpected_a');
-                    }
-                }
-                advance();
-                break;
-            case '/*properties':
-                properties[name] = true;
-                break;
-            default:
-                fail('unexpected_a');
+                    fail('unexpected_a');
             }
         }
         if (command === '/*jslint') {
@@ -2662,7 +2663,7 @@ loop:   for (;;) {
         left = left || token;
         right = right || next_token;
         if (right.id !== '(end)' && option.white &&
-                (token.line !== right.line ||
+            (token.line !== right.line ||
                 token.thru + 1 !== right.from)) {
             warn('expected_space_a_b', right, token.value, right.value);
         }
@@ -2672,7 +2673,7 @@ loop:   for (;;) {
         left = left || token;
         right = right || next_token;
         if (right.id !== '(end)' && (left.line !== right.line ||
-                (option.white && left.thru + 1 !== right.from))) {
+            (option.white && left.thru + 1 !== right.from))) {
             warn('expected_space_a_b', right, left.value, right.value);
         }
     }
@@ -2681,7 +2682,7 @@ loop:   for (;;) {
         left = left || token;
         right = right || next_token;
         if ((option.white || xmode === 'styleproperty' || xmode === 'style') &&
-                left.thru !== right.from && left.line === right.line) {
+            left.thru !== right.from && left.line === right.line) {
             warn('unexpected_space_a_b', right, left.value, right.value);
         }
     }
@@ -2690,7 +2691,7 @@ loop:   for (;;) {
         left = left || token;
         right = right || next_token;
         if (right.id !== '(end)' && (left.line !== right.line ||
-                (option.white && left.thru !== right.from))) {
+            (option.white && left.thru !== right.from))) {
             warn('unexpected_space_a_b', right, left.value, right.value);
         }
     }
@@ -2773,22 +2774,22 @@ loop:   for (;;) {
         }
         if (a.arity === b.arity && a.value === b.value) {
             switch (a.arity) {
-            case 'prefix':
-            case 'suffix':
-            case undefined:
-                return are_similar(a.first, b.first);
-            case 'infix':
-                return are_similar(a.first, b.first) &&
-                    are_similar(a.second, b.second);
-            case 'ternary':
-                return are_similar(a.first, b.first) &&
-                    are_similar(a.second, b.second) &&
-                    are_similar(a.third, b.third);
-            case 'function':
-            case 'regexp':
-                return false;
-            default:
-                return true;
+                case 'prefix':
+                case 'suffix':
+                case undefined:
+                    return are_similar(a.first, b.first);
+                case 'infix':
+                    return are_similar(a.first, b.first) &&
+                        are_similar(a.second, b.second);
+                case 'ternary':
+                    return are_similar(a.first, b.first) &&
+                        are_similar(a.second, b.second) &&
+                        are_similar(a.third, b.third);
+                case 'function':
+                case 'regexp':
+                    return false;
+                default:
+                    return true;
             }
         } else {
             if (a.id === '.' && b.id === '[' && b.arity === 'infix') {
@@ -2826,7 +2827,7 @@ loop:   for (;;) {
         }
         advance();
         if (option.safe && typeof predefined[token.value] === 'boolean' &&
-                (next_token.id !== '(' && next_token.id !== '.')) {
+            (next_token.id !== '(' && next_token.id !== '.')) {
             warn('adsafe', token);
         }
         if (initial) {
@@ -2940,7 +2941,7 @@ loop:   for (;;) {
                 if (option.plusplus) {
                     warn('unexpected_a', this);
                 } else if ((!this.first.identifier || this.first.reserved) &&
-                        this.first.id !== '.' && this.first.id !== '[') {
+                    this.first.id !== '.' && this.first.id !== '[') {
                     warn('bad_operand', this);
                 }
             }
@@ -3009,51 +3010,51 @@ loop:   for (;;) {
 
     function expected_condition(node, message) {
         switch (node.id) {
-        case '[':
-        case '-':
-            if (node.arity !== 'infix') {
+            case '[':
+            case '-':
+                if (node.arity !== 'infix') {
+                    warn(message || bundle.weird_condition, node);
+                }
+                break;
+            case 'false':
+            case 'function':
+            case 'Infinity':
+            case 'NaN':
+            case 'null':
+            case 'true':
+            case 'undefined':
+            case 'void':
+            case '(number)':
+            case '(regexp)':
+            case '(string)':
+            case '{':
                 warn(message || bundle.weird_condition, node);
-            }
-            break;
-        case 'false':
-        case 'function':
-        case 'Infinity':
-        case 'NaN':
-        case 'null':
-        case 'true':
-        case 'undefined':
-        case 'void':
-        case '(number)':
-        case '(regexp)':
-        case '(string)':
-        case '{':
-            warn(message || bundle.weird_condition, node);
-            break;
+                break;
         }
         return node;
     }
 
     function check_relation(node) {
         switch (node.arity) {
-        case 'prefix':
-            switch (node.id) {
-            case '{':
-            case '[':
+            case 'prefix':
+                switch (node.id) {
+                    case '{':
+                    case '[':
+                        warn('unexpected_a', node);
+                        break;
+                    case '!':
+                        warn('confusing_a', node);
+                        break;
+                }
+                break;
+            case 'function':
+            case 'regexp':
                 warn('unexpected_a', node);
                 break;
-            case '!':
-                warn('confusing_a', node);
-                break;
-            }
-            break;
-        case 'function':
-        case 'regexp':
-            warn('unexpected_a', node);
-            break;
-        default:
-            if (node.id  === 'NaN') {
-                warn('isnan', node);
-            }
+            default:
+                if (node.id === 'NaN') {
+                    warn('isnan', node);
+                }
         }
         return node;
     }
@@ -3067,7 +3068,7 @@ loop:   for (;;) {
             }
             var right = expression(100);
             if (are_similar(left, right) ||
-                    ((left.arity === 'string' || left.arity === 'number') &&
+                ((left.arity === 'string' || left.arity === 'number') &&
                     (right.arity === 'string' || right.arity === 'number'))) {
                 warn('weird_relation', that);
             }
@@ -3150,7 +3151,7 @@ loop:   for (;;) {
             if (option.plusplus) {
                 warn('unexpected_a', this);
             } else if ((!left.identifier || left.reserved) &&
-                    left.id !== '.' && left.id !== '[') {
+                left.id !== '.' && left.id !== '[') {
                 warn('bad_operand', this);
             }
             this.first = left;
@@ -3233,7 +3234,7 @@ loop:   for (;;) {
 
             if (the_statement.arity === 'statement') {
                 if (the_statement.id === 'switch' ||
-                        (the_statement.block && the_statement.id !== 'do')) {
+                    (the_statement.block && the_statement.id !== 'do')) {
                     spaces();
                 } else {
                     semicolon();
@@ -3252,9 +3253,9 @@ loop:   for (;;) {
                         warn('bad_new');
                     }
                 } else if (!the_statement.assign &&
-                        the_statement.id !== 'delete' &&
-                        the_statement.id !== '++' &&
-                        the_statement.id !== '--') {
+                    the_statement.id !== 'delete' &&
+                    the_statement.id !== '++' &&
+                    the_statement.id !== '--') {
                     warn('assignment_function_expression', token);
                 }
                 semicolon();
@@ -3315,7 +3316,7 @@ loop:   for (;;) {
             advance('{');
             step_in();
             if (!ordinary && !use_strict() && !old_strict_mode &&
-                    option.strict && funct['(context)']['(global)']) {
+                option.strict && funct['(context)']['(global)']) {
                 warn('missing_use_strict');
             }
             array = statements();
@@ -3385,23 +3386,23 @@ loop:   for (;;) {
 //      Change 'unused' to 'var', and reject labels.
 
                 switch (funct[variable]) {
-                case 'error':
-                    warn('unexpected_a', token);
-                    funct[variable] = 'var';
-                    break;
-                case 'unused':
-                    funct[variable] = 'var';
-                    break;
-                case 'unction':
-                    funct[variable] = 'function';
-                    this['function'] = true;
-                    break;
-                case 'function':
-                    this['function'] = true;
-                    break;
-                case 'label':
-                    warn('a_label', token, variable);
-                    break;
+                    case 'error':
+                        warn('unexpected_a', token);
+                        funct[variable] = 'var';
+                        break;
+                    case 'unused':
+                        funct[variable] = 'var';
+                        break;
+                    case 'unction':
+                        funct[variable] = 'function';
+                        this['function'] = true;
+                        break;
+                    case 'function':
+                        this['function'] = true;
+                        break;
+                    case 'label':
+                        warn('a_label', token, variable);
+                        break;
                 }
 
 // The name is not defined in the function.  If we are in the global scope,
@@ -3423,62 +3424,62 @@ loop:   for (;;) {
 
             } else {
                 switch (funct[variable]) {
-                case 'closure':
-                case 'function':
-                case 'var':
-                case 'unused':
-                    warn('a_scope', token, variable);
-                    break;
-                case 'label':
-                    warn('a_label', token, variable);
-                    break;
-                case 'outer':
-                case true:
-                case false:
-                    break;
-                default:
+                    case 'closure':
+                    case 'function':
+                    case 'var':
+                    case 'unused':
+                        warn('a_scope', token, variable);
+                        break;
+                    case 'label':
+                        warn('a_label', token, variable);
+                        break;
+                    case 'outer':
+                    case true:
+                    case false:
+                        break;
+                    default:
 
 // If the name is defined in an outer function, make an outer entry, and if
 // it was unused, make it var.
 
-                    if (typeof site === 'boolean') {
-                        funct[variable] = site;
-                        functions[0][variable] = true;
-                    } else if (site === null) {
-                        warn('a_not_allowed', token, variable);
-                        note_implied(token);
-                    } else if (typeof site !== 'object') {
-                        if (option.undef) {
-                            warn('a_not_defined', token, variable);
+                        if (typeof site === 'boolean') {
+                            funct[variable] = site;
+                            functions[0][variable] = true;
+                        } else if (site === null) {
+                            warn('a_not_allowed', token, variable);
+                            note_implied(token);
+                        } else if (typeof site !== 'object') {
+                            if (option.undef) {
+                                warn('a_not_defined', token, variable);
+                            } else {
+                                funct[variable] = true;
+                            }
+                            note_implied(token);
                         } else {
-                            funct[variable] = true;
+                            switch (site[variable]) {
+                                case 'function':
+                                case 'unction':
+                                    this['function'] = true;
+                                    site[variable] = 'closure';
+                                    funct[variable] = site['(global)'] ? false : 'outer';
+                                    break;
+                                case 'var':
+                                case 'unused':
+                                    site[variable] = 'closure';
+                                    funct[variable] = site['(global)'] ? true : 'outer';
+                                    break;
+                                case 'closure':
+                                case 'parameter':
+                                    funct[variable] = site['(global)'] ? true : 'outer';
+                                    break;
+                                case 'error':
+                                    warn('not_a_defined', token);
+                                    break;
+                                case 'label':
+                                    warn('a_label', token, variable);
+                                    break;
+                            }
                         }
-                        note_implied(token);
-                    } else {
-                        switch (site[variable]) {
-                        case 'function':
-                        case 'unction':
-                            this['function'] = true;
-                            site[variable] = 'closure';
-                            funct[variable] = site['(global)'] ? false : 'outer';
-                            break;
-                        case 'var':
-                        case 'unused':
-                            site[variable] = 'closure';
-                            funct[variable] = site['(global)'] ? true : 'outer';
-                            break;
-                        case 'closure':
-                        case 'parameter':
-                            funct[variable] = site['(global)'] ? true : 'outer';
-                            break;
-                        case 'error':
-                            warn('not_a_defined', token);
-                            break;
-                        case 'label':
-                            warn('a_label', token, variable);
-                            break;
-                        }
-                    }
                 }
             }
             return this;
@@ -3538,7 +3539,7 @@ loop:   for (;;) {
     reservevar('null');
     reservevar('this', function (x) {
         if (strict_mode && ((funct['(statement)'] &&
-                funct['(name)'].charAt(0) > 'Z') || funct['(global)'])) {
+            funct['(name)'].charAt(0) > 'Z') || funct['(global)'])) {
             warn('strict', x);
         } else if (option.safe) {
             warn('adsafe', x);
@@ -3652,7 +3653,7 @@ loop:   for (;;) {
             }
         }
         if (left.arity === right.arity &&
-                (left.arity === 'string' || left.arity === 'number')) {
+            (left.arity === 'string' || left.arity === 'number')) {
             left.value += right.value;
             left.thru = right.thru;
             if (left.arity === 'string' && jx.test(left.value)) {
@@ -3810,60 +3811,60 @@ loop:   for (;;) {
         if (c.id !== 'function') {
             if (c.identifier) {
                 switch (c.value) {
-                case 'Object':
-                    warn('use_object', token);
-                    break;
-                case 'Array':
-                    if (next_token.id === '(') {
-                        p = next_token;
-                        p.first = this;
-                        advance('(');
-                        if (next_token.id !== ')') {
-                            p.second = expression(0);
-                            if (p.second.arity !== 'number' || !p.second.value) {
-                                expected_condition(p.second,  bundle.use_array);
-                                i = false;
-                            } else {
-                                i = true;
-                            }
-                            while (next_token.id !== ')' && next_token.id !== '(end)') {
-                                if (i) {
-                                    warn('use_array', p);
+                    case 'Object':
+                        warn('use_object', token);
+                        break;
+                    case 'Array':
+                        if (next_token.id === '(') {
+                            p = next_token;
+                            p.first = this;
+                            advance('(');
+                            if (next_token.id !== ')') {
+                                p.second = expression(0);
+                                if (p.second.arity !== 'number' || !p.second.value) {
+                                    expected_condition(p.second, bundle.use_array);
                                     i = false;
+                                } else {
+                                    i = true;
                                 }
-                                advance();
+                                while (next_token.id !== ')' && next_token.id !== '(end)') {
+                                    if (i) {
+                                        warn('use_array', p);
+                                        i = false;
+                                    }
+                                    advance();
+                                }
+                            } else {
+                                warn('use_array', token);
                             }
-                        } else {
-                            warn('use_array', token);
+                            advance(')', p);
+                            discard();
+                            return p;
                         }
-                        advance(')', p);
-                        discard();
-                        return p;
-                    }
-                    warn('use_array', token);
-                    break;
-                case 'Number':
-                case 'String':
-                case 'Boolean':
-                case 'Math':
-                case 'JSON':
-                    warn('not_a_constructor', c);
-                    break;
-                case 'Function':
-                    if (!option.evil) {
-                        warn('function_eval');
-                    }
-                    break;
-                case 'Date':
-                case 'RegExp':
-                    break;
-                default:
-                    if (c.id !== 'function') {
-                        i = c.value.substr(0, 1);
-                        if (option.newcap && (i < 'A' || i > 'Z')) {
-                            warn('constructor_name_a', token);
+                        warn('use_array', token);
+                        break;
+                    case 'Number':
+                    case 'String':
+                    case 'Boolean':
+                    case 'Math':
+                    case 'JSON':
+                        warn('not_a_constructor', c);
+                        break;
+                    case 'Function':
+                        if (!option.evil) {
+                            warn('function_eval');
                         }
-                    }
+                        break;
+                    case 'Date':
+                    case 'RegExp':
+                        break;
+                    default:
+                        if (c.id !== 'function') {
+                            i = c.value.substr(0, 1);
+                            if (option.newcap && (i < 'A' || i > 'Z')) {
+                                warn('constructor_name_a', token);
+                            }
+                        }
                 }
             } else {
                 if (c.id !== '.' && c.id !== '[' && c.id !== '(') {
@@ -3893,7 +3894,7 @@ loop:   for (;;) {
             if (left.identifier) {
                 if (left.value.match(/^[A-Z]([A-Z0-9_$]*[a-z][A-Za-z0-9_$]*)?$/)) {
                     if (left.value !== 'Number' && left.value !== 'String' &&
-                            left.value !== 'Boolean' && left.value !== 'Date') {
+                        left.value !== 'Boolean' && left.value !== 'Date') {
                         if (left.value === 'Math' || left.value === 'JSON') {
                             warn('not_a_function', left);
                         } else if (left.value === 'Object') {
@@ -3905,7 +3906,7 @@ loop:   for (;;) {
                 }
             } else if (left.id === '.') {
                 if (option.safe && left.first.value === 'Math' &&
-                        left.second === 'random') {
+                    left.second === 'random') {
                     warn('adsafe', left);
                 }
             }
@@ -3913,7 +3914,7 @@ loop:   for (;;) {
         step_in();
         if (next_token.id !== ')') {
             no_space();
-            for (;;) {
+            for (; ;) {
                 edge();
                 p.push(expression(10));
                 if (next_token.id !== ',') {
@@ -3930,17 +3931,17 @@ loop:   for (;;) {
             }
             if (!option.evil) {
                 if (left.value === 'eval' || left.value === 'Function' ||
-                        left.value === 'execScript') {
+                    left.value === 'execScript') {
                     warn('evil', left);
                 } else if (p[0] && p[0].arity === 'string' &&
-                        (left.value === 'setTimeout' ||
+                    (left.value === 'setTimeout' ||
                         left.value === 'setInterval')) {
                     warn('implied_evil', left);
                 }
             }
             if (!left.identifier && left.id !== '.' && left.id !== '[' &&
-                    left.id !== '(' && left.id !== '&&' && left.id !== '||' &&
-                    left.id !== '?') {
+                left.id !== '(' && left.id !== '&&' && left.id !== '||' &&
+                left.id !== '?') {
                 warn('bad_invocation', left);
             }
         }
@@ -3982,10 +3983,10 @@ loop:   for (;;) {
         that.first = left;
         that.second = token;
         if (left && left.value === 'arguments' &&
-                (name === 'callee' || name === 'caller')) {
+            (name === 'callee' || name === 'caller')) {
             warn('avoid_a', left, 'arguments.' + name);
         } else if (!option.evil && left && left.value === 'document' &&
-                (name === 'write' || name === 'writeln')) {
+            (name === 'write' || name === 'writeln')) {
             warn('write_is_wrong', left);
         } else if (option.adsafe) {
             if (!adsafe_top && left.value === 'ADSAFE') {
@@ -3995,9 +3996,9 @@ loop:   for (;;) {
                     if (xmode !== 'script') {
                         warn('adsafe', that);
                     } else if (adsafe_went || next_token.id !== '(' ||
-                            peek(0).arity !== 'string' ||
-                            peek(0).value !== adsafe_id ||
-                            peek(1).id !== ',') {
+                        peek(0).arity !== 'string' ||
+                        peek(0).value !== adsafe_id ||
+                        peek(1).id !== ',') {
                         fail('adsafe_a', that, 'go');
                     }
                     adsafe_went = true;
@@ -4009,12 +4010,12 @@ loop:   for (;;) {
         if (!option.evil && (name === 'eval' || name === 'execScript')) {
             warn('evil');
         } else if (option.safe) {
-            for (;;) {
+            for (; ;) {
                 if (banned[name] === true) {
                     warn('adsafe_a', token, name);
                 }
                 if (typeof predefined[left.value] !== 'boolean' ||
-                        next_token.id === '(') {
+                    next_token.id === '(') {
                     break;
                 }
                 if (standard_property[name] === true) {
@@ -4050,10 +4051,10 @@ loop:   for (;;) {
             if (option.safe && banned[e.value] === true) {
                 warn('adsafe_a', e);
             } else if (!option.evil &&
-                    (e.value === 'eval' || e.value === 'execScript')) {
+                (e.value === 'eval' || e.value === 'execScript')) {
                 warn('evil', e);
             } else if (option.safe &&
-                    (e.value.charAt(0) === '_' || e.value.charAt(0) === '-')) {
+                (e.value.charAt(0) === '_' || e.value.charAt(0) === '-')) {
                 warn('adsafe_subscript_a', e);
             }
             tally_property(e.value);
@@ -4116,7 +4117,7 @@ loop:   for (;;) {
                     if (banned[id]) {
                         warn('adsafe_a');
                     } else if (id.charAt(0) === '_' ||
-                            id.charAt(id.length - 1) === '_') {
+                        id.charAt(id.length - 1) === '_') {
                         warn('dangling_a');
                     }
                 }
@@ -4142,7 +4143,7 @@ loop:   for (;;) {
             discard();
             return;
         }
-        for (;;) {
+        for (; ;) {
             edge();
             id = identifier();
             params.push(token);
@@ -4161,9 +4162,9 @@ loop:   for (;;) {
 
     function do_function(func, name) {
         var old_properties = properties,
-            old_option     = option,
-            old_global     = global,
-            old_scope      = scope;
+            old_option = option,
+            old_global = global,
+            old_scope = scope;
         funct = {
             '(name)'     : name || '"' + anonname + '"',
             '(line)'     : next_token.line,
@@ -4173,10 +4174,10 @@ loop:   for (;;) {
             '(scope)'    : scope,
             '(token)'    : func
         };
-        properties  = old_properties && Object.create(old_properties);
-        option      = Object.create(old_option);
-        global      = Object.create(old_global);
-        scope       = Object.create(old_scope);
+        properties = old_properties && Object.create(old_properties);
+        option = Object.create(old_option);
+        global = Object.create(old_global);
+        scope = Object.create(old_scope);
         token.funct = funct;
         functions.push(funct);
         if (name) {
@@ -4186,11 +4187,11 @@ loop:   for (;;) {
         func.first = funct['(params)'] = function_params();
         one_space();
         func.block = block(false);
-        funct      = funct['(context)'];
+        funct = funct['(context)'];
         properties = old_properties;
-        option     = old_option;
-        global     = old_global;
-        scope      = old_scope;
+        option = old_option;
+        global = old_global;
+        scope = old_scope;
     }
 
 
@@ -4263,7 +4264,7 @@ loop:   for (;;) {
             if (next_token.id !== ',') {
                 break;
             }
-            for (;;) {
+            for (; ;) {
                 comma();
                 if (next_token.id !== ',') {
                     break;
@@ -4313,7 +4314,7 @@ loop:   for (;;) {
         this.arity = 'statement';
         this.first = [];
         step_in('var');
-        for (;;) {
+        for (; ;) {
             name = next_token;
             id = identifier();
             if (funct['(global)'] && predefined[id] === false) {
@@ -4345,7 +4346,7 @@ loop:   for (;;) {
             }
             comma();
             if (var_mode && next_token.line === token.line &&
-                    this.first.length === 1) {
+                this.first.length === 1) {
                 var_mode = false;
                 indent.open = false;
                 indent.at -= option.indent;
@@ -4536,7 +4537,7 @@ loop:   for (;;) {
             spaces();
             edge('case');
             advance('case');
-            for (;;) {
+            for (; ;) {
                 one_space();
                 particular = expression(0);
                 the_case.first.push(particular);
@@ -4651,13 +4652,13 @@ loop:   for (;;) {
         if (peek(0).id === 'in') {
             value = next_token;
             switch (funct[value.value]) {
-            case 'unused':
-                funct[value.value] = 'var';
-                break;
-            case 'var':
-                break;
-            default:
-                warn('bad_in_a', value);
+                case 'unused':
+                    funct[value.value] = 'var';
+                    break;
+                case 'var':
+                    break;
+                default:
+                    warn('bad_in_a', value);
             }
             advance();
             the_in = next_token;
@@ -4670,45 +4671,45 @@ loop:   for (;;) {
             blok = block(true);
             if (!option.forin) {
                 if (blok.length === 1 && typeof blok[0] === 'object' &&
-                        blok[0].value === 'if' && !blok[0]['else']) {
+                    blok[0].value === 'if' && !blok[0]['else']) {
                     filter = blok[0].first;
                     while (filter.id === '&&') {
                         filter = filter.first;
                     }
                     switch (filter.id) {
-                    case '===':
-                    case '!==':
-                        ok = filter.first.id === '[' ? (
-                            filter.first.first.value === the_in.second.value &&
-                            filter.first.second.value === the_in.first.value
-                        ) : (
-                            filter.first.id === 'typeof' &&
-                            filter.first.first.id === '[' &&
-                            filter.first.first.first.value === the_in.second.value &&
-                            filter.first.first.second.value === the_in.first.value
-                        );
-                        break;
-                    case '(':
-                        ok = filter.first.id === '.' && ((
-                            filter.first.first.value === the_in.second.value &&
-                            filter.first.second.value === 'hasOwnProperty' &&
-                            filter.second[0].value === the_in.first.value
-                        ) || (
-                            filter.first.first.value === 'ADSAFE' &&
-                            filter.first.second.value === 'has' &&
-                            filter.second[0].value === the_in.second.value &&
-                            filter.second[1].value === the_in.first.value
-                        ) || (
-                            filter.first.first.id === '.' &&
-                            filter.first.first.first.id === '.' &&
-                            filter.first.first.first.first.value === 'Object' &&
-                            filter.first.first.first.second.value === 'prototype' &&
-                            filter.first.first.second.value === 'hasOwnProperty' &&
-                            filter.first.second.value === 'call' &&
-                            filter.second[0].value === the_in.second.value &&
-                            filter.second[1].value === the_in.first.value
-                        ));
-                        break;
+                        case '===':
+                        case '!==':
+                            ok = filter.first.id === '[' ? (
+                                filter.first.first.value === the_in.second.value &&
+                                    filter.first.second.value === the_in.first.value
+                                ) : (
+                                filter.first.id === 'typeof' &&
+                                    filter.first.first.id === '[' &&
+                                    filter.first.first.first.value === the_in.second.value &&
+                                    filter.first.first.second.value === the_in.first.value
+                                );
+                            break;
+                        case '(':
+                            ok = filter.first.id === '.' && ((
+                                filter.first.first.value === the_in.second.value &&
+                                    filter.first.second.value === 'hasOwnProperty' &&
+                                    filter.second[0].value === the_in.first.value
+                                ) || (
+                                filter.first.first.value === 'ADSAFE' &&
+                                    filter.first.second.value === 'has' &&
+                                    filter.second[0].value === the_in.second.value &&
+                                    filter.second[1].value === the_in.first.value
+                                ) || (
+                                filter.first.first.id === '.' &&
+                                    filter.first.first.first.id === '.' &&
+                                    filter.first.first.first.first.value === 'Object' &&
+                                    filter.first.first.first.second.value === 'prototype' &&
+                                    filter.first.first.second.value === 'hasOwnProperty' &&
+                                    filter.first.second.value === 'call' &&
+                                    filter.second[0].value === the_in.second.value &&
+                                    filter.second[1].value === the_in.first.value
+                                ));
+                            break;
                     }
                 }
                 if (!ok) {
@@ -4719,7 +4720,7 @@ loop:   for (;;) {
             if (next_token.id !== ';') {
                 edge();
                 this.first = [];
-                for (;;) {
+                for (; ;) {
                     this.first.push(expression(0, 'for'));
                     if (next_token.id !== ',') {
                         break;
@@ -4742,7 +4743,7 @@ loop:   for (;;) {
             if (next_token.id !== ')') {
                 this.third = [];
                 edge();
-                for (;;) {
+                for (; ;) {
                     this.third.push(expression(0, 'for'));
                     if (next_token.id !== ',') {
                         break;
@@ -4912,26 +4913,26 @@ loop:   for (;;) {
         }
 
         switch (next_token.id) {
-        case '{':
-            json_object();
-            break;
-        case '[':
-            json_array();
-            break;
-        case 'true':
-        case 'false':
-        case 'null':
-        case '(number)':
-        case '(string)':
-            advance();
-            break;
-        case '-':
-            advance('-');
-            no_space_only();
-            advance('(number)');
-            break;
-        default:
-            fail('unexpected_a');
+            case '{':
+                json_object();
+                break;
+            case '[':
+                json_array();
+                break;
+            case 'true':
+            case 'false':
+            case 'null':
+            case '(number)':
+            case '(string)':
+                advance();
+                break;
+            case '-':
+                advance('-');
+                no_space_only();
+                advance('(number)');
+                break;
+            default:
+                fail('unexpected_a');
         }
     }
 
@@ -5029,7 +5030,7 @@ loop:   for (;;) {
         if (next_token.arity === 'number') {
             advance();
             if (next_token.arity !== 'string' &&
-                    css_lengthData[next_token.value] === true) {
+                css_lengthData[next_token.value] === true) {
                 no_space_only();
                 advance();
             } else if (+token.value !== 0) {
@@ -5049,7 +5050,7 @@ loop:   for (;;) {
         if (next_token.arity === 'number') {
             advance();
             if (next_token.arity !== 'string' &&
-                    css_lengthData[next_token.value] === true) {
+                css_lengthData[next_token.value] === true) {
                 no_space_only();
                 advance();
             }
@@ -5062,11 +5063,11 @@ loop:   for (;;) {
     function css_width() {
         if (next_token.identifier) {
             switch (next_token.value) {
-            case 'thin':
-            case 'medium':
-            case 'thick':
-                advance();
-                return true;
+                case 'thin':
+                case 'medium':
+                case 'thick':
+                    advance();
+                    return true;
             }
         } else {
             return css_length();
@@ -5205,22 +5206,22 @@ loop:   for (;;) {
 
 
     css_any = [css_url, function () {
-        for (;;) {
+        for (; ;) {
             if (next_token.identifier) {
                 switch (next_token.value.toLowerCase()) {
-                case 'url':
-                    css_url();
-                    break;
-                case 'expression':
-                    warn('unexpected_a');
-                    advance();
-                    break;
-                default:
-                    advance();
+                    case 'url':
+                        css_url();
+                        break;
+                    case 'expression':
+                        warn('unexpected_a');
+                        advance();
+                        break;
+                    default:
+                        advance();
                 }
             } else {
-                if (next_token.id === ';' || next_token.id === '!'  ||
-                        next_token.id === '(end)' || next_token.id === '}') {
+                if (next_token.id === ';' || next_token.id === '!' ||
+                    next_token.id === '(end)' || next_token.id === '}') {
                     return true;
                 }
                 advance();
@@ -5429,7 +5430,7 @@ loop:   for (;;) {
     function style_attribute() {
         var v;
         while (next_token.id === '*' || next_token.id === '#' ||
-                next_token.value === '_') {
+            next_token.value === '_') {
             if (!option.css) {
                 warn('unexpected_a');
             }
@@ -5473,16 +5474,16 @@ loop:   for (;;) {
             start = 0,
             vi;
         switch (typeof v) {
-        case 'function':
-            return v();
-        case 'string':
-            if (next_token.identifier && next_token.value === v) {
-                advance();
-                return true;
-            }
-            return false;
+            case 'function':
+                return v();
+            case 'string':
+                if (next_token.identifier && next_token.value === v) {
+                    advance();
+                    return true;
+                }
+                return false;
         }
-        for (;;) {
+        for (; ;) {
             if (i >= v.length) {
                 return false;
             }
@@ -5512,7 +5513,7 @@ loop:   for (;;) {
         }
         start = i;
         once = [];
-        for (;;) {
+        for (; ;) {
             round = false;
             for (i = start; i < v.length; i += 1) {
                 if (!once[i]) {
@@ -5546,7 +5547,7 @@ loop:   for (;;) {
             return;
         } else {
             if (next_token.identifier &&
-                    (next_token.value === 'odd' || next_token.value === 'even')) {
+                (next_token.value === 'odd' || next_token.value === 'even')) {
                 advance();
                 return;
             }
@@ -5556,9 +5557,9 @@ loop:   for (;;) {
 
     function substyle() {
         var v;
-        for (;;) {
+        for (; ;) {
             if (next_token.id === '}' || next_token.id === '(end)' ||
-                    (xquote && next_token.id === xquote)) {
+                (xquote && next_token.id === xquote)) {
                 return;
             }
             while (next_token.id === ';') {
@@ -5596,110 +5597,110 @@ loop:   for (;;) {
     function style_selector() {
         if (next_token.identifier) {
             if (!Object.prototype.hasOwnProperty.call(html_tag, option.cap ?
-                    next_token.value.toLowerCase() : next_token.value)) {
+                next_token.value.toLowerCase() : next_token.value)) {
                 warn('expected_tagname_a');
             }
             advance();
         } else {
             switch (next_token.id) {
-            case '>':
-            case '+':
-                advance();
-                style_selector();
-                break;
-            case ':':
-                advance(':');
-                switch (next_token.value) {
-                case 'active':
-                case 'after':
-                case 'before':
-                case 'checked':
-                case 'disabled':
-                case 'empty':
-                case 'enabled':
-                case 'first-child':
-                case 'first-letter':
-                case 'first-line':
-                case 'first-of-type':
-                case 'focus':
-                case 'hover':
-                case 'last-child':
-                case 'last-of-type':
-                case 'link':
-                case 'only-of-type':
-                case 'root':
-                case 'target':
-                case 'visited':
+                case '>':
+                case '+':
                     advance();
-                    break;
-                case 'lang':
-                    advance();
-                    advance('(');
-                    if (!next_token.identifier) {
-                        warn('expected_lang_a');
-                    }
-                    advance(')');
-                    break;
-                case 'nth-child':
-                case 'nth-last-child':
-                case 'nth-last-of-type':
-                case 'nth-of-type':
-                    advance();
-                    advance('(');
-                    style_child();
-                    advance(')');
-                    break;
-                case 'not':
-                    advance();
-                    advance('(');
-                    if (next_token.id === ':' && peek(0).value === 'not') {
-                        warn('not');
-                    }
                     style_selector();
-                    advance(')');
                     break;
-                default:
-                    warn('expected_pseudo_a');
-                }
-                break;
-            case '#':
-                advance('#');
-                if (!next_token.identifier) {
-                    warn('expected_id_a');
-                }
-                advance();
-                break;
-            case '*':
-                advance('*');
-                break;
-            case '.':
-                advance('.');
-                if (!next_token.identifier) {
-                    warn('expected_class_a');
-                }
-                advance();
-                break;
-            case '[':
-                advance('[');
-                if (!next_token.identifier) {
-                    warn('expected_attribute_a');
-                }
-                advance();
-                if (next_token.id === '=' || next_token.value === '~=' ||
+                case ':':
+                    advance(':');
+                    switch (next_token.value) {
+                        case 'active':
+                        case 'after':
+                        case 'before':
+                        case 'checked':
+                        case 'disabled':
+                        case 'empty':
+                        case 'enabled':
+                        case 'first-child':
+                        case 'first-letter':
+                        case 'first-line':
+                        case 'first-of-type':
+                        case 'focus':
+                        case 'hover':
+                        case 'last-child':
+                        case 'last-of-type':
+                        case 'link':
+                        case 'only-of-type':
+                        case 'root':
+                        case 'target':
+                        case 'visited':
+                            advance();
+                            break;
+                        case 'lang':
+                            advance();
+                            advance('(');
+                            if (!next_token.identifier) {
+                                warn('expected_lang_a');
+                            }
+                            advance(')');
+                            break;
+                        case 'nth-child':
+                        case 'nth-last-child':
+                        case 'nth-last-of-type':
+                        case 'nth-of-type':
+                            advance();
+                            advance('(');
+                            style_child();
+                            advance(')');
+                            break;
+                        case 'not':
+                            advance();
+                            advance('(');
+                            if (next_token.id === ':' && peek(0).value === 'not') {
+                                warn('not');
+                            }
+                            style_selector();
+                            advance(')');
+                            break;
+                        default:
+                            warn('expected_pseudo_a');
+                    }
+                    break;
+                case '#':
+                    advance('#');
+                    if (!next_token.identifier) {
+                        warn('expected_id_a');
+                    }
+                    advance();
+                    break;
+                case '*':
+                    advance('*');
+                    break;
+                case '.':
+                    advance('.');
+                    if (!next_token.identifier) {
+                        warn('expected_class_a');
+                    }
+                    advance();
+                    break;
+                case '[':
+                    advance('[');
+                    if (!next_token.identifier) {
+                        warn('expected_attribute_a');
+                    }
+                    advance();
+                    if (next_token.id === '=' || next_token.value === '~=' ||
                         next_token.value === '$=' ||
                         next_token.value === '|=' ||
                         next_token.id === '*=' ||
                         next_token.id === '^=') {
-                    advance();
-                    if (next_token.arity !== 'string') {
-                        warn('expected_string_a');
+                        advance();
+                        if (next_token.arity !== 'string') {
+                            warn('expected_string_a');
+                        }
+                        advance();
                     }
-                    advance();
-                }
-                advance(']');
-                break;
-            default:
-                fail('expected_selector_a');
+                    advance(']');
+                    break;
+                default:
+                    fail('expected_selector_a');
             }
         }
     }
@@ -5708,10 +5709,10 @@ loop:   for (;;) {
         if (next_token.id === '{') {
             warn('expected_style_pattern');
         }
-        for (;;) {
+        for (; ;) {
             style_selector();
             if (next_token.id === '</' || next_token.id === '{' ||
-                    next_token.id === '(end)') {
+                next_token.id === '(end)') {
                 return '';
             }
             if (next_token.id === ',') {
@@ -5742,33 +5743,33 @@ loop:   for (;;) {
             advance('@');
             if (next_token.identifier) {
                 switch (next_token.value) {
-                case 'import':
-                    advance();
-                    if (!css_url()) {
-                        warn('expected_a_b',
-                            next_token, 'url', next_token.value);
+                    case 'import':
                         advance();
-                    }
-                    semicolon();
-                    break;
-                case 'media':
-                    advance();
-                    for (;;) {
-                        if (!next_token.identifier || css_media[next_token.value] === true) {
-                            fail('expected_media_a');
+                        if (!css_url()) {
+                            warn('expected_a_b',
+                                next_token, 'url', next_token.value);
+                            advance();
                         }
+                        semicolon();
+                        break;
+                    case 'media':
                         advance();
-                        if (next_token.id !== ',') {
-                            break;
+                        for (; ;) {
+                            if (!next_token.identifier || css_media[next_token.value] === true) {
+                                fail('expected_media_a');
+                            }
+                            advance();
+                            if (next_token.id !== ',') {
+                                break;
+                            }
+                            comma();
                         }
-                        comma();
-                    }
-                    advance('{');
-                    style_list();
-                    advance('}');
-                    break;
-                default:
-                    warn('expected_at_a');
+                        advance('{');
+                        style_list();
+                        advance('}');
+                        break;
+                    default:
+                        warn('expected_at_a');
                 }
             } else {
                 warn('expected_at_a');
@@ -5839,8 +5840,8 @@ loop:   for (;;) {
             }
             ids[u] = true;
         } else if (a === 'href' || a === 'background' ||
-                a === 'content' || a === 'data' ||
-                a.indexOf('src') >= 0 || a.indexOf('url') >= 0) {
+            a === 'content' || a === 'data' ||
+            a.indexOf('src') >= 0 || a.indexOf('url') >= 0) {
             if (option.safe && ux.test(v)) {
                 fail('bad_url', next_token, v);
             }
@@ -5894,130 +5895,130 @@ loop:   for (;;) {
             }
         }
         switch (name) {
-        case 'div':
-            if (option.adsafe && stack.length === 1 && !adsafe_id) {
-                warn('adsafe_missing_id');
-            }
-            break;
-        case 'script':
-            xmode = 'script';
-            advance('>');
-            if (attribute.lang) {
-                warn('lang', token);
-            }
-            if (option.adsafe && stack.length !== 1) {
-                warn('adsafe_placement', token);
-            }
-            if (attribute.src) {
-                if (option.adsafe && (!adsafe_may || !approved[attribute.src])) {
-                    warn('adsafe_source', token);
+            case 'div':
+                if (option.adsafe && stack.length === 1 && !adsafe_id) {
+                    warn('adsafe_missing_id');
                 }
-                if (attribute.type) {
-                    warn('type', token);
+                break;
+            case 'script':
+                xmode = 'script';
+                advance('>');
+                if (attribute.lang) {
+                    warn('lang', token);
                 }
-            } else {
-                step_in(next_token.from);
-                edge();
-                use_strict();
-                adsafe_top = true;
-                script = statements();
+                if (option.adsafe && stack.length !== 1) {
+                    warn('adsafe_placement', token);
+                }
+                if (attribute.src) {
+                    if (option.adsafe && (!adsafe_may || !approved[attribute.src])) {
+                        warn('adsafe_source', token);
+                    }
+                    if (attribute.type) {
+                        warn('type', token);
+                    }
+                } else {
+                    step_in(next_token.from);
+                    edge();
+                    use_strict();
+                    adsafe_top = true;
+                    script = statements();
 
 // JSLint is also the static analyzer for ADsafe. See www.ADsafe.org.
 
-                if (option.adsafe) {
-                    if (adsafe_went) {
-                        fail('adsafe_script', token);
-                    }
-                    if (script.length !== 1 ||
-                            aint(script[0],             'id',    '(') ||
-                            aint(script[0].first,       'id',    '.') ||
+                    if (option.adsafe) {
+                        if (adsafe_went) {
+                            fail('adsafe_script', token);
+                        }
+                        if (script.length !== 1 ||
+                            aint(script[0], 'id', '(') ||
+                            aint(script[0].first, 'id', '.') ||
                             aint(script[0].first.first, 'value', 'ADSAFE') ||
-                            aint(script[0].second[0],   'value', adsafe_id)) {
-                        fail('adsafe_id_go');
+                            aint(script[0].second[0], 'value', adsafe_id)) {
+                            fail('adsafe_id_go');
+                        }
+                        switch (script[0].first.second.value) {
+                            case 'id':
+                                if (adsafe_may || script[0].second.length !== 1) {
+                                    fail('adsafe_id', next_token);
+                                }
+                                adsafe_may = true;
+                                break;
+                            case 'go':
+                                if (!adsafe_may) {
+                                    fail('adsafe_id');
+                                }
+                                if (script[0].second.length !== 2 ||
+                                    aint(script[0].second[1], 'id', 'function') ||
+                                    script[0].second[1].first.length !== 2 ||
+                                    aint(script[0].second[1].first[0], 'value', 'dom') ||
+                                    aint(script[0].second[1].first[1], 'value', 'lib')) {
+                                    fail('adsafe_go', next_token);
+                                }
+                                adsafe_went = true;
+                                break;
+                            default:
+                                fail('adsafe_id_go');
+                        }
                     }
-                    switch (script[0].first.second.value) {
-                    case 'id':
-                        if (adsafe_may || script[0].second.length !== 1) {
-                            fail('adsafe_id', next_token);
-                        }
-                        adsafe_may = true;
+                    indent = null;
+                }
+                xmode = 'html';
+                advance('</');
+                if (!next_token.identifier && next_token.value !== 'script') {
+                    warn('expected_a_b', next_token, 'script', next_token.value);
+                }
+                advance();
+                xmode = 'outer';
+                break;
+            case 'style':
+                xmode = 'style';
+                advance('>');
+                styles();
+                xmode = 'html';
+                advance('</');
+                if (!next_token.identifier && next_token.value !== 'style') {
+                    warn('expected_a_b', next_token, 'style', next_token.value);
+                }
+                advance();
+                xmode = 'outer';
+                break;
+            case 'input':
+                switch (attribute.type) {
+                    case 'radio':
+                    case 'checkbox':
+                    case 'button':
+                    case 'reset':
+                    case 'submit':
                         break;
-                    case 'go':
-                        if (!adsafe_may) {
-                            fail('adsafe_id');
+                    case 'text':
+                    case 'file':
+                    case 'password':
+                    case 'file':
+                    case 'hidden':
+                    case 'image':
+                        if (option.adsafe && attribute.autocomplete !== 'off') {
+                            warn('adsafe_autocomplete');
                         }
-                        if (script[0].second.length !== 2 ||
-                                aint(script[0].second[1], 'id', 'function') ||
-                                script[0].second[1].first.length !== 2 ||
-                                aint(script[0].second[1].first[0], 'value', 'dom') ||
-                                aint(script[0].second[1].first[1], 'value', 'lib')) {
-                            fail('adsafe_go', next_token);
-                        }
-                        adsafe_went = true;
                         break;
                     default:
-                        fail('adsafe_id_go');
-                    }
-                }
-                indent = null;
-            }
-            xmode = 'html';
-            advance('</');
-            if (!next_token.identifier && next_token.value !== 'script') {
-                warn('expected_a_b', next_token, 'script', next_token.value);
-            }
-            advance();
-            xmode = 'outer';
-            break;
-        case 'style':
-            xmode = 'style';
-            advance('>');
-            styles();
-            xmode = 'html';
-            advance('</');
-            if (!next_token.identifier && next_token.value !== 'style') {
-                warn('expected_a_b', next_token, 'style', next_token.value);
-            }
-            advance();
-            xmode = 'outer';
-            break;
-        case 'input':
-            switch (attribute.type) {
-            case 'radio':
-            case 'checkbox':
-            case 'button':
-            case 'reset':
-            case 'submit':
-                break;
-            case 'text':
-            case 'file':
-            case 'password':
-            case 'file':
-            case 'hidden':
-            case 'image':
-                if (option.adsafe && attribute.autocomplete !== 'off') {
-                    warn('adsafe_autocomplete');
+                        warn('bad_type');
                 }
                 break;
-            default:
-                warn('bad_type');
-            }
-            break;
-        case 'applet':
-        case 'body':
-        case 'embed':
-        case 'frame':
-        case 'frameset':
-        case 'head':
-        case 'iframe':
-        case 'noembed':
-        case 'noframes':
-        case 'object':
-        case 'param':
-            if (option.adsafe) {
-                warn('adsafe_tag', next_token, name);
-            }
-            break;
+            case 'applet':
+            case 'body':
+            case 'embed':
+            case 'frame':
+            case 'frameset':
+            case 'head':
+            case 'iframe':
+            case 'noembed':
+            case 'noframes':
+            case 'object':
+            case 'param':
+                if (option.adsafe) {
+                    warn('adsafe_tag', next_token, name);
+                }
+                break;
         }
     }
 
@@ -6032,191 +6033,191 @@ loop:   for (;;) {
         xmode = 'html';
         xquote = '';
         stack = null;
-        for (;;) {
+        for (; ;) {
             switch (next_token.value) {
-            case '<':
-                xmode = 'html';
-                advance('<');
-                attributes = {};
-                tag_name = next_token;
-                if (!tag_name.identifier) {
-                    warn('bad_name_a', tag_name);
-                }
-                name = tag_name.value;
-                if (option.cap) {
-                    name = name.toLowerCase();
-                }
-                tag_name.name = name;
-                advance();
-                if (!stack) {
-                    stack = [];
-                    do_begin(name);
-                }
-                tag = html_tag[name];
-                if (typeof tag !== 'object') {
-                    fail('unrecognized_tag_a', tag_name, name);
-                }
-                is_empty = tag.empty;
-                tag_name.type = name;
-                for (;;) {
-                    if (next_token.id === '/') {
-                        advance('/');
-                        if (next_token.id !== '>') {
-                            warn('expected_a_b', next_token, '>', next_token.value);
-                        }
-                        break;
+                case '<':
+                    xmode = 'html';
+                    advance('<');
+                    attributes = {};
+                    tag_name = next_token;
+                    if (!tag_name.identifier) {
+                        warn('bad_name_a', tag_name);
                     }
-                    if (next_token.id && next_token.id.substr(0, 1) === '>') {
-                        break;
+                    name = tag_name.value;
+                    if (option.cap) {
+                        name = name.toLowerCase();
                     }
-                    if (!next_token.identifier) {
-                        if (next_token.id === '(end)' || next_token.id === '(error)') {
-                            warn('expected_a_b', next_token, '>', next_token.value);
-                        }
-                        warn('bad_name_a');
-                    }
-                    option.white = true;
-                    spaces();
-                    attribute = next_token.value;
-                    option.white = old_white;
+                    tag_name.name = name;
                     advance();
-                    if (!option.cap && attribute !== attribute.toLowerCase()) {
-                        warn('attribute_case_a', token);
+                    if (!stack) {
+                        stack = [];
+                        do_begin(name);
                     }
-                    attribute = attribute.toLowerCase();
-                    xquote = '';
-                    if (Object.prototype.hasOwnProperty.call(attributes, attribute)) {
-                        warn('duplicate_a', token, attribute);
+                    tag = html_tag[name];
+                    if (typeof tag !== 'object') {
+                        fail('unrecognized_tag_a', tag_name, name);
                     }
-                    if (attribute.slice(0, 2) === 'on') {
-                        if (!option.on) {
-                            warn('html_handlers');
+                    is_empty = tag.empty;
+                    tag_name.type = name;
+                    for (; ;) {
+                        if (next_token.id === '/') {
+                            advance('/');
+                            if (next_token.id !== '>') {
+                                warn('expected_a_b', next_token, '>', next_token.value);
+                            }
+                            break;
                         }
-                        xmode = 'scriptstring';
-                        advance('=');
-                        quote = next_token.id;
-                        if (quote !== '"' && quote !== '\'') {
-                            fail('expected_a_b', next_token, '"', next_token.value);
+                        if (next_token.id && next_token.id.substr(0, 1) === '>') {
+                            break;
                         }
-                        xquote = quote;
-                        wmode = option.white;
-                        option.white = false;
-                        advance(quote);
-                        use_strict();
-                        statements();
-                        option.white = wmode;
-                        if (next_token.id !== quote) {
-                            fail('expected_a_b', next_token, quote, next_token.value);
+                        if (!next_token.identifier) {
+                            if (next_token.id === '(end)' || next_token.id === '(error)') {
+                                warn('expected_a_b', next_token, '>', next_token.value);
+                            }
+                            warn('bad_name_a');
                         }
-                        xmode = 'html';
+                        option.white = true;
+                        spaces();
+                        attribute = next_token.value;
+                        option.white = old_white;
+                        advance();
+                        if (!option.cap && attribute !== attribute.toLowerCase()) {
+                            warn('attribute_case_a', token);
+                        }
+                        attribute = attribute.toLowerCase();
                         xquote = '';
-                        advance(quote);
-                        tag = false;
-                    } else if (attribute === 'style') {
-                        xmode = 'scriptstring';
-                        advance('=');
-                        quote = next_token.id;
-                        if (quote !== '"' && quote !== '\'') {
-                            fail('expected_a_b', next_token, '"', next_token.value);
+                        if (Object.prototype.hasOwnProperty.call(attributes, attribute)) {
+                            warn('duplicate_a', token, attribute);
                         }
-                        xmode = 'styleproperty';
-                        xquote = quote;
-                        advance(quote);
-                        substyle();
-                        xmode = 'html';
-                        xquote = '';
-                        advance(quote);
-                        tag = false;
-                    } else {
-                        if (next_token.id === '=') {
+                        if (attribute.slice(0, 2) === 'on') {
+                            if (!option.on) {
+                                warn('html_handlers');
+                            }
+                            xmode = 'scriptstring';
                             advance('=');
-                            tag = next_token.value;
-                            if (!next_token.identifier &&
+                            quote = next_token.id;
+                            if (quote !== '"' && quote !== '\'') {
+                                fail('expected_a_b', next_token, '"', next_token.value);
+                            }
+                            xquote = quote;
+                            wmode = option.white;
+                            option.white = false;
+                            advance(quote);
+                            use_strict();
+                            statements();
+                            option.white = wmode;
+                            if (next_token.id !== quote) {
+                                fail('expected_a_b', next_token, quote, next_token.value);
+                            }
+                            xmode = 'html';
+                            xquote = '';
+                            advance(quote);
+                            tag = false;
+                        } else if (attribute === 'style') {
+                            xmode = 'scriptstring';
+                            advance('=');
+                            quote = next_token.id;
+                            if (quote !== '"' && quote !== '\'') {
+                                fail('expected_a_b', next_token, '"', next_token.value);
+                            }
+                            xmode = 'styleproperty';
+                            xquote = quote;
+                            advance(quote);
+                            substyle();
+                            xmode = 'html';
+                            xquote = '';
+                            advance(quote);
+                            tag = false;
+                        } else {
+                            if (next_token.id === '=') {
+                                advance('=');
+                                tag = next_token.value;
+                                if (!next_token.identifier &&
                                     next_token.id !== '"' &&
                                     next_token.id !== '\'' &&
                                     next_token.arity !== 'string' &&
                                     next_token.arity !== 'number' &&
                                     next_token.id !== '(color)') {
-                                warn('expected_attribute_value_a', token, attribute);
+                                    warn('expected_attribute_value_a', token, attribute);
+                                }
+                                advance();
+                            } else {
+                                tag = true;
                             }
-                            advance();
-                        } else {
-                            tag = true;
+                        }
+                        attributes[attribute] = tag;
+                        do_attribute(name, attribute, tag);
+                    }
+                    do_tag(name, attributes);
+                    if (!is_empty) {
+                        stack.push(tag_name);
+                    }
+                    xmode = 'outer';
+                    advance('>');
+                    break;
+                case '</':
+                    xmode = 'html';
+                    advance('</');
+                    if (!next_token.identifier) {
+                        warn('bad_name_a');
+                    }
+                    name = next_token.value;
+                    if (option.cap) {
+                        name = name.toLowerCase();
+                    }
+                    advance();
+                    if (!stack) {
+                        fail('unexpected_a', next_token, closetag(name));
+                    }
+                    tag_name = stack.pop();
+                    if (!tag_name) {
+                        fail('unexpected_a', next_token, closetag(name));
+                    }
+                    if (tag_name.name !== name) {
+                        fail('expected_a_b',
+                            next_token, closetag(tag_name.name), closetag(name));
+                    }
+                    if (next_token.id !== '>') {
+                        fail('expected_a_b', next_token, '>', next_token.value);
+                    }
+                    xmode = 'outer';
+                    advance('>');
+                    break;
+                case '<!':
+                    if (option.safe) {
+                        warn('adsafe_a');
+                    }
+                    xmode = 'html';
+                    for (; ;) {
+                        advance();
+                        if (next_token.id === '>' || next_token.id === '(end)') {
+                            break;
+                        }
+                        if (next_token.value.indexOf('--') >= 0) {
+                            fail('unexpected_a', next_token, '--');
+                        }
+                        if (next_token.value.indexOf('<') >= 0) {
+                            fail('unexpected_a', next_token, '<');
+                        }
+                        if (next_token.value.indexOf('>') >= 0) {
+                            fail('unexpected_a', next_token, '>');
                         }
                     }
-                    attributes[attribute] = tag;
-                    do_attribute(name, attribute, tag);
-                }
-                do_tag(name, attributes);
-                if (!is_empty) {
-                    stack.push(tag_name);
-                }
-                xmode = 'outer';
-                advance('>');
-                break;
-            case '</':
-                xmode = 'html';
-                advance('</');
-                if (!next_token.identifier) {
-                    warn('bad_name_a');
-                }
-                name = next_token.value;
-                if (option.cap) {
-                    name = name.toLowerCase();
-                }
-                advance();
-                if (!stack) {
-                    fail('unexpected_a', next_token, closetag(name));
-                }
-                tag_name = stack.pop();
-                if (!tag_name) {
-                    fail('unexpected_a', next_token, closetag(name));
-                }
-                if (tag_name.name !== name) {
-                    fail('expected_a_b',
-                        next_token, closetag(tag_name.name), closetag(name));
-                }
-                if (next_token.id !== '>') {
-                    fail('expected_a_b', next_token, '>', next_token.value);
-                }
-                xmode = 'outer';
-                advance('>');
-                break;
-            case '<!':
-                if (option.safe) {
-                    warn('adsafe_a');
-                }
-                xmode = 'html';
-                for (;;) {
-                    advance();
-                    if (next_token.id === '>' || next_token.id === '(end)') {
-                        break;
+                    xmode = 'outer';
+                    advance('>');
+                    break;
+                case '(end)':
+                    return;
+                default:
+                    if (next_token.id === '(end)') {
+                        fail('missing_a', next_token,
+                            '</' + stack[stack.length - 1].value + '>');
+                    } else {
+                        advance();
                     }
-                    if (next_token.value.indexOf('--') >= 0) {
-                        fail('unexpected_a', next_token, '--');
-                    }
-                    if (next_token.value.indexOf('<') >= 0) {
-                        fail('unexpected_a', next_token, '<');
-                    }
-                    if (next_token.value.indexOf('>') >= 0) {
-                        fail('unexpected_a', next_token, '>');
-                    }
-                }
-                xmode = 'outer';
-                advance('>');
-                break;
-            case '(end)':
-                return;
-            default:
-                if (next_token.id === '(end)') {
-                    fail('missing_a', next_token,
-                        '</' + stack[stack.length - 1].value + '>');
-                } else {
-                    advance();
-                }
             }
             if (stack && stack.length === 0 && (option.adsafe ||
-                    !option.fragment || next_token.id === '(end)')) {
+                !option.fragment || next_token.id === '(end)')) {
                 break;
             }
         }
@@ -6255,29 +6256,29 @@ loop:   for (;;) {
                 option.safe = true;
             }
             if (option.safe) {
-                option.browser     =
+                option.browser =
                     option['continue'] =
-                    option.css     =
-                    option.debug   =
-                    option.devel   =
-                    option.evil    =
-                    option.forin   =
-                    option.on      =
-                    option.rhino   =
-                    option.sub     =
-                    option.widget  =
-                    option.windows = false;
+                        option.css =
+                            option.debug =
+                                option.devel =
+                                    option.evil =
+                                        option.forin =
+                                            option.on =
+                                                option.rhino =
+                                                    option.sub =
+                                                        option.widget =
+                                                            option.windows = false;
 
-                option.nomen       =
-                    option.strict  =
-                    option.undef   = true;
+                option.nomen =
+                    option.strict =
+                        option.undef = true;
 
-                predefined.Date         =
-                    predefined['eval']  =
-                    predefined.Function =
-                    predefined.Object   = null;
+                predefined.Date =
+                    predefined['eval'] =
+                        predefined.Function =
+                            predefined.Object = null;
 
-                predefined.ADSAFE  =
+                predefined.ADSAFE =
                     predefined.lib = false;
             }
         } else {
@@ -6342,55 +6343,55 @@ loop:   for (;;) {
                 }
             } else {
                 switch (next_token.id) {
-                case '{':
-                case '[':
-                    json_mode = true;
-                    json_value();
-                    break;
-                case '@':
-                case '*':
-                case '#':
-                case '.':
-                case ':':
-                    xmode = 'style';
-                    advance();
-                    if (token.id !== '@' || !next_token.identifier ||
+                    case '{':
+                    case '[':
+                        json_mode = true;
+                        json_value();
+                        break;
+                    case '@':
+                    case '*':
+                    case '#':
+                    case '.':
+                    case ':':
+                        xmode = 'style';
+                        advance();
+                        if (token.id !== '@' || !next_token.identifier ||
                             next_token.value !== 'charset' || token.line !== 1 ||
                             token.from !== 1) {
-                        fail('css');
-                    }
-                    advance();
-                    if (next_token.arity !== 'string' &&
+                            fail('css');
+                        }
+                        advance();
+                        if (next_token.arity !== 'string' &&
                             next_token.value !== 'UTF-8') {
-                        fail('css');
-                    }
-                    advance();
-                    semicolon();
-                    styles();
-                    break;
+                            fail('css');
+                        }
+                        advance();
+                        semicolon();
+                        styles();
+                        break;
 
-                default:
-                    if (option.adsafe && option.fragment) {
-                        fail('expected_a_b',
-                            next_token, '<div>', next_token.value);
-                    }
+                    default:
+                        if (option.adsafe && option.fragment) {
+                            fail('expected_a_b',
+                                next_token, '<div>', next_token.value);
+                        }
 
 // If the first token is predef semicolon, ignore it. This is sometimes used when
 // files are intended to be appended to files that may be sloppy. predef sloppy
 // file may be depending on semicolon insertion on its last line.
 
-                    step_in(1);
-                    if (next_token.id === ';') {
-                        semicolon();
-                    }
-                    if (next_token.value === 'use strict') {
-                        warn('function_strict');
-                        use_strict();
-                    }
-                    adsafe_top = true;
-                    begin.first = statements();
-                    JSLINT.tree = begin;
-                    if (option.adsafe && (JSLINT.tree.length !== 1 ||
+                        step_in(1);
+                        if (next_token.id === ';') {
+                            semicolon();
+                        }
+                        if (next_token.value === 'use strict') {
+                            warn('function_strict');
+                            use_strict();
+                        }
+                        adsafe_top = true;
+                        begin.first = statements();
+                        JSLINT.tree = begin;
+                        if (option.adsafe && (JSLINT.tree.length !== 1 ||
                             aint(JSLINT.tree[0], 'id', '(') ||
                             aint(JSLINT.tree[0].first, 'id', '.') ||
                             aint(JSLINT.tree[0].first.first, 'value', 'ADSAFE') ||
@@ -6398,11 +6399,11 @@ loop:   for (;;) {
                             JSLINT.tree[0].second.length !== 2 ||
                             JSLINT.tree[0].second[0].arity !== 'string' ||
                             aint(JSLINT.tree[0].second[1], 'id', 'function'))) {
-                        fail('adsafe_lib');
-                    }
-                    if (JSLINT.tree.disrupt) {
-                        warn('weird_program', prev_token);
-                    }
+                            fail('adsafe_lib');
+                        }
+                        if (JSLINT.tree.disrupt) {
+                            warn('weird_program', prev_token);
+                        }
                 }
             }
             indent = null;
@@ -6555,7 +6556,7 @@ loop:   for (;;) {
                             ': ' + warning.reason.entityify() +
                             '</p><p class=evidence>' +
                             (evidence && (evidence.length > 80 ? evidence.slice(0, 77) + '...' :
-                            evidence).entityify()) + '</p>');
+                                evidence).entityify()) + '</p>');
                     }
                 }
             }
@@ -6668,7 +6669,7 @@ loop:   for (;;) {
     var fs, sys, path, cwd, filename, optsFilename, options, input, errors, warning;
 
     fs = require('fs');
-    sys = require('sys');
+    sys = require('util');
     path = require('path');
     cwd = process.cwd();
 
@@ -6685,9 +6686,11 @@ loop:   for (;;) {
 
     optsFilename = process.argv[3];
 
-    if(optsFilename) {
-        if(!path.existsSync(optsFilename)) { throw "invalid options file path " +  optsFilename; }
-        
+    if (optsFilename) {
+        if (!path.existsSync(optsFilename)) {
+            throw "invalid options file path " + optsFilename;
+        }
+
         options = fs.readFileSync(optsFilename, "utf-8");
         if (isWindows && options.indexOf('\uFEFF') === 0) {
             options = options.substring(1, options.length);
@@ -6705,7 +6708,7 @@ loop:   for (;;) {
         input = input.substring(1, input.length);
     }
 
-    if(!(options)) {
+    if (!(options)) {
         options = {
             browser: false, // assume a browser
             white: false, // strict whitespace
@@ -6713,7 +6716,7 @@ loop:   for (;;) {
             maxerr: 100
         };
     }
-    
+
     // run jslint on the file
     JSLINT(input, {
         browser: false, // assume a browser
@@ -6724,9 +6727,26 @@ loop:   for (;;) {
 
     errors = JSLINT.errors;
 
+    var escapeTeamcityString = function(message) {
+            if(!message) {
+                return "";
+            }
+
+            return message.replace(/\|/g, "||")
+                          .replace(/\'/g, "|'")
+                          .replace(/\n/g, "|n")
+                          .replace(/\r/g, "|r")
+                          .replace(/\u0085/g, "|x")
+                          .replace(/\u2028/g, "|l")
+                          .replace(/\u2029/g, "|p")
+                          .replace(/\[/g, "|[")
+                          .replace(/]/g, "|]");
+        };
+
     // if we have errors, print them out
     if (errors.length > 0) {
-
+        sys.puts("##teamcity[testSuiteStarted name='test suite 1']");
+        sys.puts("##teamcity[testStarted name='jslint' captureStandardOutput='true']");
         for (var i = 0; i < errors.length; i++) {
             warning = errors[i];
 
@@ -6735,8 +6755,11 @@ loop:   for (;;) {
                 // e.g.: main.js(12): lint warning: Weird assignment
                 var r = filename + "(" + warning.line + "): lint warning: " + warning.reason;
                 sys.puts(r);
+                sys.puts("##teamcity[testFailed name='JsLint Failed' message='|[FAILED|]' details='fail']");
             }
         }
+
+        sys.puts("##teamcity[testSuiteFinished name='test suite 1']");
     }
 
 }());

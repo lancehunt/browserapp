@@ -1,0 +1,1 @@
+define(["./css","./session","./profile","./gui","pubsub"],function(a,b,c,d,e){return window.app={},window.app.core={css:a,pubsub:e,session:new b,profile:new c,gui:d,log:logger.trace,services:{}},app.core.pubsub.subscribe("account-changed",function(a,b){app.core.session.selectedAccountNumber=b}),window.app.core})

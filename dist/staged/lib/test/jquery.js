@@ -1,0 +1,1 @@
+define([],function(){return global=global||{},global.$={when:function(){return{always:function(){return{fail:function(){}}}}}},global.$})

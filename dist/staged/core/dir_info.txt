@@ -1,0 +1,2 @@
+﻿the core directory is used for scripts that make up the main application, the shell and container.
+Scripts in this directory will always get loaded.

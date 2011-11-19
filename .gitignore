@@ -14,8 +14,10 @@ bin/
 Thumbs.db
 Package/Binaries/
 Package/Sources/
-packages
 *.docstates
 *.idea
 _ReSharper.*/
+*.local.js
 src/**/less/*.css
+src/**/**/less/*.css
+*.orig
